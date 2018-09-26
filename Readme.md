@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алёна Фоменкова](https://up.htmlacademy.ru/adaptive/15/user/436447).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктория Коваленко](https://up.htmlacademy.ru/adaptive/15/user/42638).
 
 ---
 
