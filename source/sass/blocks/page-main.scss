@@ -1,11 +1,11 @@
-.page-main {
-  background-color: #fbfbfb;
-}
-
 .page-main__title-wrapper {
   box-sizing: border-box;
   padding-top: 76px;
   padding-bottom: 160px;
+  background-color: #fbfbfb;
+}
+
+.page-main__title-wrapper--image {
   background-image: url("../../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
