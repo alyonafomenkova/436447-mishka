@@ -1,0 +1,7 @@
+.main-nav {
+  line-height: 24px;
+}
+
+.main-nav__list {
+  @include list-reset;
+}
