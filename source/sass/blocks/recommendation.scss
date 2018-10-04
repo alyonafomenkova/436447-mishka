@@ -1,0 +1,31 @@
+.recommendation {
+  padding: 0 30px;
+}
+
+.recommendation__title {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.recommendation__type {
+  color: #63d1bb;
+}
+
+.recommendation__description {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #444444;
+}
+
+.recommendation__image {
+  width: 260px;
+  height: 315px;
+  background-color: #f1f1f1;
+}
+
+.recommendation__price {
+  line-height: 24px;
+  text-align: center;
+  color: #444444;
+}

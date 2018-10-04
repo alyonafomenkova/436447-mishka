@@ -1,0 +1,20 @@
+.categories {
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.categories__list {
+  @include list-reset;
+}
+
+.categories__item {
+  background-color: #63d1bb;
+
+  &--darker {
+    background-color: #56c3b2;
+  }
+}
+
+.categories__link {
+  color: #ffffff;
+}

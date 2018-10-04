@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
           <a class="main-nav__link main-nav__link--active">Вязание на заказ</a>
         </li>
         <li class="main-nav__item main-nav__item--search">
-          <a class="main-nav__link" href="#">Search</a>
+          <a class="main-nav__link" href="#">Поиск по сайту</a>
         </li>
         <li class="main-nav__item main-nav__item--basket">
           <a class="main-nav__link" href="#">Корзина: пока пуста</a>
@@ -32,7 +33,9 @@
 
   <main class="page-main">
     <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
-      <h1 class="order-form__title">Вязание на заказ</h1>
+      <div class="page-main__title-wrapper">
+        <h1 class="page-main__title page-main__title--form">Вязание на заказ</h1>
+      </div>
       <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
         детали.
       </p>
@@ -61,23 +64,23 @@
       <fieldset class="order-form__name">
         <legend class="order-form__legend">ФИО</legend>
         <label for="name-id">Имя:</label>
-        <input class="order-form__name-input" type="text" name="name" id="name-id" placeholder="Введите ваше имя*" required>
+        <input class="order-form__name-input order-form__name-input--placeholder-style" type="text" name="name" id="name-id" placeholder="Введите ваше имя*" required>
         <label for="surname-id">Фамилия:</label>
-        <input class="order-form__surname-input" type="text" name="surname" id="surname-id" placeholder="Укажите фамилию*" required>
+        <input class="order-form__surname-input order-form__name-input--placeholder-style" type="text" name="surname" id="surname-id" placeholder="Укажите фамилию*" required>
         <label for="patronymic-name-id">Отчество:</label>
-        <input class="order-form__patronymic-name-input" type="text" name="patronymic-name" id="patronymic-name-id" placeholder="Отчество, если желаете">
+        <input class="order-form__patronymic-name-input order-form__name-input--placeholder-style" type="text" name="patronymic-name" id="patronymic-name-id" placeholder="Отчество, если желаете">
       </fieldset>
       <fieldset class="order-form__tel">
         <legend class="order-form__legend">Тел</legend>
-        <input class="order-form__tel-input" type="tel" name="phone" id="phone-id" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+        <input class="order-form__tel-input order-form__name-input--placeholder-style-tel" type="tel" name="phone" id="phone-id" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
       </fieldset>
       <fieldset class="order-form__email">
         <legend class="order-form__legend">E-mail</legend>
-        <input class="order-form__email-input" type="email" name="email" id="email-id" placeholder="Ваш Email*" required>
+        <input class="order-form__email-input order-form__name-input--placeholder-style" type="email" name="email" id="email-id" placeholder="Ваш Email*" required>
       </fieldset>
       <fieldset class="order-form__comment">
         <legend class="order-form__legend">Доп</legend>
-        <textarea class="order-form__comment-field" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <textarea class="order-form__comment-field order-form__comment-field--placeholder-style" placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </fieldset>
       <p class="order-form__required-fields">*Поля обязательны для заполнения</p>
       <button class="order-form__order-btn button">Отправить заказ</button>

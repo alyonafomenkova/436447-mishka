@@ -1,0 +1,40 @@
+.order-form {
+  line-height: 18px;
+}
+
+.order-form__description {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #444444;
+}
+
+.order-form__legend {
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+}
+
+.order-form__name-input--placeholder-style,
+.order-form__comment-field--placeholder-style {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: normal;
+}
+
+.order-form__name-input--placeholder-style-tel {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: normal;
+}
+
+.order-form__required-fields {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #444444;
+}
+
+.order-form__order-btn {
+  line-height: 16px;
+}

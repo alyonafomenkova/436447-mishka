@@ -1,0 +1,12 @@
+.about-us {
+  padding: 0 30px;
+}
+
+.about-us__title {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.about-us__list {
+  @include list-reset;
+}
