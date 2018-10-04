@@ -14,6 +14,14 @@
 .page-main__title {
   font-size: 27px;
   line-height: 30px;
-  font-weight: bold;
+  color: #010000;
   text-align: center;
+}
+
+.page-main__title--catalog {
+  color: #000000;
+}
+
+.page-main__title--form {
+  color: #231f20;
 }

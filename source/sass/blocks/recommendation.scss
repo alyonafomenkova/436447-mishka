@@ -5,17 +5,16 @@
 .recommendation__title {
   font-size: 25px;
   line-height: 30px;
-  font-weight: bold;
 }
 
 .recommendation__type {
-  font-weight: bold;
   color: #63d1bb;
 }
 
 .recommendation__description {
   font-size: 15px;
   line-height: 24px;
+  font-weight: normal;
   color: #444444;
 }
 
@@ -26,7 +25,6 @@
 }
 
 .recommendation__price {
-  font-size: 17px;
   line-height: 24px;
   text-align: center;
   color: #444444;

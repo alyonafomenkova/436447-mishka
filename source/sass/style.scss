@@ -4,13 +4,14 @@
 @import "mixins.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/main-logo.scss";
-/* Не забыть про блок хедер. Сейчас он пустой
+/* При необходимости добавить файл с хедером.
 @import "blocks/page-header.scss";
 */
 @import "blocks/page-main.scss";
 @import "blocks/categories.scss";
 @import "blocks/recommendation.scss";
 @import "blocks/recommendation-table.scss";
+@import "blocks/button.scss";
 @import "blocks/about-us.scss";
 @import "blocks/reviews.scss";
 @import "blocks/contacts.scss";

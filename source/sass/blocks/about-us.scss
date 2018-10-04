@@ -5,10 +5,8 @@
 .about-us__title {
   font-size: 25px;
   line-height: 30px;
-  font-weight: bold;
 }
 
 .about-us__list {
   @include list-reset;
-  font-weight: bold;
 }

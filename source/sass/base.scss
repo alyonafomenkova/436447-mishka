@@ -3,7 +3,7 @@ body {
   padding: 0;
 
   font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 17px;
   line-height: 20px;
   color: #000000;
@@ -16,14 +16,4 @@ a {
 
 img {
   display: block;
-}
-
-.button {
-  display: block;
-  padding: 16px;
-  border: solid 2px #444444;
-  color: #444444;
-  font-weight: bold;
-  text-transform: uppercase;
-  background-color: #ffffff;
 }
