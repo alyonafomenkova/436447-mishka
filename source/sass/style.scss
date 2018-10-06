@@ -1,26 +1,30 @@
-@import "node_modules/node.normalize.scss/normalize.scss";
-@import "fonts.scss";
-@import "base.scss";
-@import "mixins.scss";
-@import "blocks/main-nav.scss";
-@import "blocks/main-logo.scss";
+@import
+  "base/normalize.scss",
+  "base/fonts.scss",
+  "base/base.scss";
+@import "abstract/mixins.scss";
+/*------------------------------ Index page ------------------------------*/
+@import
+  "blocks/main-nav.scss",
+  "blocks/main-logo.scss",
+  "blocks/page-main.scss",
+  "blocks/categories.scss",
+  "blocks/recommendation.scss",
+  "blocks/recommendation-table.scss",
+  "blocks/button.scss",
+  "blocks/about-us.scss",
+  "blocks/reviews.scss",
+  "blocks/contacts.scss",
+  "blocks/modal.scss",
+  "blocks/page-footer.scss",
+  "blocks/social.scss",
+  "blocks/copyright.scss";
 /* При необходимости добавить файл с хедером.
 @import "blocks/page-header.scss";
 */
-@import "blocks/page-main.scss";
-@import "blocks/categories.scss";
-@import "blocks/recommendation.scss";
-@import "blocks/recommendation-table.scss";
-@import "blocks/button.scss";
-@import "blocks/about-us.scss";
-@import "blocks/reviews.scss";
-@import "blocks/contacts.scss";
-@import "blocks/modal.scss";
-@import "blocks/page-footer.scss";
-@import "blocks/social.scss";
-@import "blocks/copyright.scss";
 /*------------------------------ Catalog page ------------------------------*/
-@import "blocks/catalog.scss";
-@import "blocks/video-post.scss";
+@import
+  "blocks/catalog.scss",
+  "blocks/video-post.scss";
 /*------------------------------ Form page ------------------------------*/
 @import "blocks/order-form.scss";
