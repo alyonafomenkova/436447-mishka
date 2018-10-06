@@ -12,8 +12,29 @@
   line-height: 30px;
   font-weight: normal;
   color: #444444;
+  border-collapse: collapse;
+  margin-bottom: 73px;
+}
+
+.contacts__details-field {
+  width: 65px;
+}
+
+.contacts__details-field,
+.contacts__details-value {
+  padding-top: 40px;
+  vertical-align: top;
+}
+
+.contacts__details-value--underline {
+  border-bottom: 1px solid #62d1ba;
+}
+
+.contacts__map {
+  padding: 0;
+  margin-bottom: 39px;
 }
 
 .contacts__write {
-  font-size: 18px;
+  margin: 0 auto;
 }

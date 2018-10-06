@@ -2,9 +2,12 @@
   "base/normalize.scss",
   "base/fonts.scss",
   "base/base.scss";
-@import "abstract/mixins.scss";
+@import
+  "abstract/mixins.scss",
+  "abstract/variables.scss";
 /*------------------------------ Index page ------------------------------*/
 @import
+  "blocks/page-header.scss",
   "blocks/main-nav.scss",
   "blocks/main-logo.scss",
   "blocks/page-main.scss",
@@ -19,9 +22,7 @@
   "blocks/page-footer.scss",
   "blocks/social.scss",
   "blocks/copyright.scss";
-/* При необходимости добавить файл с хедером.
-@import "blocks/page-header.scss";
-*/
+
 /*------------------------------ Catalog page ------------------------------*/
 @import
   "blocks/catalog.scss",

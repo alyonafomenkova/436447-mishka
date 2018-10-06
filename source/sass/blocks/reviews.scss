@@ -1,5 +1,16 @@
 .reviews {
+  position: relative;
   padding: 0 30px;
+/*
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -90px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    width: 100%;
+    height: 23px;
+  }
+  */
 }
 
 .reviews__title {
@@ -25,4 +36,26 @@
 
 .reviews__write {
   font-size: 18px;
+}
+
+.reviews__pagination {
+  font-size: 0;
+  margin-bottom: 38px;
+}
+
+.reviews__button {
+  width: 130px;
+  height: 52px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #ececec;
+
+  &--prev {
+    background-image: url("../img/icon-left-arrow.svg");
+  }
+
+  &--next {
+    background-image: url("../img/icon-right-arrow.svg");
+  }
 }

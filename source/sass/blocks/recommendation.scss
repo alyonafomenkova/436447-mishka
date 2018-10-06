@@ -1,5 +1,5 @@
 .recommendation {
-  padding: 0 30px;
+  padding: 33px 30px 36px 30px;
 }
 
 .recommendation__title {
@@ -9,6 +9,7 @@
 
 .recommendation__type {
   color: #63d1bb;
+  text-transform: uppercase;
 }
 
 .recommendation__description {
@@ -22,10 +23,12 @@
   width: 260px;
   height: 315px;
   background-color: #f1f1f1;
+  margin-bottom: 30px;
 }
 
 .recommendation__price {
   line-height: 24px;
   text-align: center;
   color: #444444;
+  margin-bottom: 29px;
 }

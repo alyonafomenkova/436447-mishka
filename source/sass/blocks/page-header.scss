@@ -1,0 +1,16 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 320px;
+}
+
+.page-header__toggle-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: url("../img/icon-menu-close.svg") no-repeat #ffffff;
+  width: 21px;
+  height: 21px;
+  border: none;
+}

@@ -1,5 +1,6 @@
 .main-logo {
-  display: block;
-  width: 86px;
-  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 79px;
 }
