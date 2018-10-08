@@ -2,15 +2,45 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 320px;
+  min-width: 320px;
+  padding: 0 30px;
 }
 
-.page-header__toggle-btn {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  background: url("../img/icon-menu-close.svg") no-repeat #ffffff;
-  width: 21px;
-  height: 21px;
-  border: none;
+.page-header__logo {
+  display: block;
+  padding: 22px 0;
+  margin: 0 auto;
+}
+
+.page-header__intro {
+  display: none;
+
+  &--text {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #444444;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    min-width: $tablet-width;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 22px 50px 20px 50px;
+  }
+
+  .page-header__logo {
+    width: 320px;
+  }
+
+  .page-header__intro {
+    display: block;
+    width: 334;
+
+    &--text {
+      order: 2;
+    }
+  }
 }

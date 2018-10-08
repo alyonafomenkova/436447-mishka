@@ -3,22 +3,23 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="main-logo">
+    <a class="page-header__logo main-logo">
       <img class="main-logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Mishka">
     </a>
     <nav class="main-nav">
-      <button class="page-header__toggle-btn"></button>
+      <button class="main-nav__toggle-btn"></button>
       <ul class="main-nav__list">
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item--catalog">
           <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
         </li>
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item-knitting">
           <a class="main-nav__link" href="form.html">Вязание на заказ</a>
         </li>
         <li class="main-nav__item main-nav__item--search">
@@ -29,6 +30,9 @@
         </li>
       </ul>
     </nav>
+    <div class="page-header__intro">
+      <p class="page-header__intro--text">Бесплатная доставка по России</p>
+    </div>
   </header>
 
   <main class="page-main">
