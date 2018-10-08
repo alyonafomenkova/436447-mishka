@@ -2,20 +2,9 @@
   width: 320px;
 }
 
-.page-main__title-wrapper {
-  box-sizing: border-box;
+.page-main__title {
   padding-top: 76px;
   padding-bottom: 155px;
-  background-color: #fbfbfb;
-}
-
-.page-main__title-wrapper--index {
-  background-image: url("../../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-}
-
-.page-main__title {
   font-size: 27px;
   line-height: 30px;
   color: #010000;
@@ -28,4 +17,16 @@
 
 .page-main__title--form {
   color: #231f20;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    min-width: $tablet-width;
+    padding: 0 50px;
+  }
+
+  .page-main__title {
+    width: 380px;
+    margin: 0 auto;
+  }
 }
