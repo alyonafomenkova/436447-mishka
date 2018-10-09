@@ -57,3 +57,16 @@
     margin-bottom: 55px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .catalog__item {
+    flex-direction: column;
+    width: 350px;
+  }
+}
