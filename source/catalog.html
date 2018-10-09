@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -37,45 +38,51 @@
     </div>
     <section class="catalog">
       <ul class="catalog__list">
-        <li class="catalog-item">
+        <li class="catalog__item catalog-item">
           <a href="# ">
             <img class="catalog-item__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Фото игрушки Зайчик-попрыгайчик">
           </a>
-          <div class="catalog-item-info">
-            <h2 class="catalog-item__title">
-              <a class="catalog-item__title-link">Зайчик-попрыгайчик</a>
-            </h2>
-            <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
+          <div class="catalog-item__wrap">
+            <div class="catalog-item__info--top">
+              <h2 class="catalog-item__title">
+                <a class="catalog-item__title-link">Зайчик-попрыгайчик</a>
+              </h2>
+              <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
+            </div>
             <div class="catalog-item__purchase-wrapper">
               <p class="catalog-item__price">1 200 руб.</p>
               <button class="catalog-item__order js-order"></button>
             </div>
           </div>
         </li>
-        <li class="catalog-item">
+        <li class="catalog__item catalog-item">
           <a href="#">
             <img class="catalog-item__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Фото корзинки для белья">
           </a>
-          <div class="catalog-item-info">
-            <h2 class="catalog-item__title">
-              <a class="catalog-item__title-link">Корзинка для белья</a>
-            </h2>
-            <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
+          <div class="catalog-item__wrap">
+            <div class="catalog-item__info--top">
+              <h2 class="catalog-item__title">
+                <a class="catalog-item__title-link">Корзинка для белья</a>
+              </h2>
+              <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
+            </div>
             <div class="catalog-item__purchase-wrapper">
               <p class="catalog-item__price">690 руб.</p>
               <button class="catalog-item__order js-order"></button>
             </div>
           </div>
         </li>
-        <li class="catalog-item">
+        <li class="catalog__item catalog-item">
           <a href="# ">
             <img class="catalog-item__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Фото корзинки для игрушек ">
           </a>
-          <div class="catalog-item-info">
-            <h2 class="catalog-item__title">
-              <a class="catalog-item__title-link">Большая корзинка для игрушек</a>
-            </h2>
-            <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
+          <div class="catalog-item__wrap">
+            <div class="catalog-item__info--top">
+              <h2 class="catalog-item__title">
+                <a class="catalog-item__title-link">Большая корзинка для игрушек</a>
+              </h2>
+              <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
+            </div>
             <div class="catalog-item__purchase-wrapper">
               <p class="catalog-item__price">1 500 руб.</p>
               <button class="catalog-item__order js-order"></button>
@@ -113,6 +120,9 @@
   </main>
 
   <footer class="page-footer">
+    <div class="page-footer__logo">
+      <img src="img/logo-footer.svg" width="102" height="34" alt="Логотип сайта Mishka">
+    </div>
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
