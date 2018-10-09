@@ -71,3 +71,36 @@
     background-image: url("../img/icon-feature-gift.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    padding: 0;
+    padding-top: 30px;
+  }
+
+  .about-us__list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .about-us__item {
+    width: 50%;
+
+    &--materials,
+    &--handmade {
+      order: -2;
+    }
+
+    &--style,
+    &--support {
+      order: -1;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    padding: 30px 100px;
+  }
+}
