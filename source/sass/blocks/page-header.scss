@@ -1,15 +1,15 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
   position: relative;
   min-width: 320px;
   padding: 0 30px;
 }
 
-.page-header__logo {
-  display: block;
-  padding: 22px 0;
-  margin: 0 auto;
+.page-header__logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 79px;
 }
 
 .page-header__intro {
@@ -26,12 +26,15 @@
 @media (min-width: $tablet-width) {
   .page-header {
     min-width: $tablet-width;
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
     padding: 22px 50px 20px 50px;
   }
 
-  .page-header__logo {
+  .page-header__logo-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
     width: 320px;
   }
 
