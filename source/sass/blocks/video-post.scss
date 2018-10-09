@@ -19,3 +19,40 @@
   font-size: 17px;
   line-height: 16px;
 }
+
+@media (min-width: $tablet-width) {
+  .video-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .video-post__image {
+    order: -1;
+    width: 100%;
+    min-height: 450px;
+  }
+
+  .video-post__btn-order {
+    width: 584px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-post {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .video-post__image {
+    width: 700px;
+  }
+
+  .vidio-post__info,
+  .video-post__btn-order {
+    width: 350px;
+  }
+}
