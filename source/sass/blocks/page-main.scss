@@ -30,3 +30,10 @@
     margin: 0 auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    min-width: $desktop-width;
+    padding: 0 100px;
+  }
+}
