@@ -38,3 +38,32 @@
 .contacts__write {
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 175px;
+  }
+
+  .contacts__title {
+    width: 350px;
+    order: -2;
+  }
+
+  .contacts__details {
+    order: 1;
+  }
+
+  .contacts__write {
+    order: 2;
+  }
+}
