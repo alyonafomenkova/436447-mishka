@@ -25,7 +25,7 @@
 
 @media (min-width: $tablet-width) {
   .page-main {
-    min-width: $tablet-width;
+    width: $tablet-width;
     padding: 0 50px;
   }
 
@@ -44,7 +44,7 @@
 
 @media (min-width: $desktop-width) {
   .page-main {
-    min-width: $desktop-width;
+    width: $desktop-width;
     padding: 0 100px;
   }
 
