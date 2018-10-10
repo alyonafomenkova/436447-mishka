@@ -10,23 +10,36 @@
 
 <body>
   <header class="page-header">
-    <a class="main-logo" href="index.html">
-      <img class="main-logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Mishka">
+    <a class="page-header__logo main-logo" href="index.html">
+      <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Mishka">
     </a>
     <nav class="main-nav">
-      <button class="page-header__toggle-btn"></button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
+      <button class="main-nav__toggle-btn"></button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--catalog">
           <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
         </li>
-        <li class="main-nav__item">
+        <li class="site-list__item site-list__item-knitting">
           <a class="main-nav__link main-nav__link--active">Вязание на заказ</a>
         </li>
-        <li class="main-nav__item main-nav__item--search">
-          <a class="main-nav__link" href="#">Поиск по сайту</a>
+      </ul>
+      <ul class="main-nav__list user-list">
+        <li class="user-list__item user-list__item--search">
+          <a class="user-list__link" href="#">Поиск по сайту</a>
         </li>
-        <li class="main-nav__item main-nav__item--basket">
-          <a class="main-nav__link" href="#">Корзина: пока пуста</a>
+        <li class="user-list__item user-list__item--basket">
+          <a class="user-list__link" href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list special-list">
+        <li class="special-list__item special-list__item--new">
+          <a class="special-list__link" href="#">Новые поступления</a>
+        </li>
+        <li class="special-list__item special-list__item--sale">
+          <a class="special-list__link" href="#">Распродажа</a>
+        </li>
+        <li class="special-list__item special-list__item--delivery">
+          <a class="special-list__link" href="#">Бесплатная доставка по России</a>
         </li>
       </ul>
     </nav>
