@@ -1,13 +1,13 @@
 .page-main {
   width: 320px;
   padding: 0 30px;
+  margin: 0 auto;
 }
 
 .page-main__title {
   display: block;
   margin: 2px 0 31px -2px;
-  padding: 71px 0 76px;
-  /*width: 380px;*/
+  padding: 76px 0;
   text-align: center;
   background-color: #f1f1f1;
   font-size: 27px;
@@ -49,7 +49,7 @@
   }
 
   .page-main__title {
-    padding: 100px 0;
+    padding: 100px 92px;
     margin-top: 97px;
     font-size: 53px;
     line-height: 57px;
