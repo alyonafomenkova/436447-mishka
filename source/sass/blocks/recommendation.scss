@@ -1,3 +1,17 @@
+.recommendation {
+  position: relative;
+  margin-bottom: 136px;
+}
+
+.recommendation::after {
+  content: "";
+  position: absolute;
+  bottom: -73px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  width: 100%;
+  height: 23px;
+}
+
 .recommendation__title {
   font-size: 25px;
   line-height: 30px;
