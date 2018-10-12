@@ -1,10 +1,20 @@
+.video-post {
+  padding-bottom: 33px;
+}
+
+.video-post__wrapper-layout {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 .video-post__title {
   line-height: 24px;
 }
 
 .video-post__image {
   background-color: #f8f8f8;
-  weight: 260px;
+  width: 260px;
   height: 150px;
 }
 
@@ -13,9 +23,62 @@
   line-height: 24px;
   font-weight: normal;
   color: #444444;
+  width: 200px;
+  padding-left: 5px;
 }
 
 .video-post__btn-order {
   font-size: 17px;
   line-height: 16px;
+  width: 192px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .video-post__wrapper-layout {
+    flex-direction: column;
+  }
+
+  .video-post__image-wrapper {
+    order: -1;
+    width: 668px;
+  }
+
+  .video-post__title {
+    font-size: 20px;
+  }
+
+  .video-post__text {
+    width: 100%;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .video-post__btn-order {
+    width: 584px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-post__wrapper-layout {
+    align-items: flex-end;
+  }
+
+  .video-post__header {
+    max-width: 350px;
+  }
+
+  .video-post__image-wrapper {
+    position: absolute;
+    left: 0;
+    width: 682px;
+  }
+
+  .video-post__info {
+    width: 350px;
+  }
+
+  .video-post__btn-order {
+    width: 230px;
+  }
 }

@@ -1,0 +1,22 @@
+.site-list__item {
+  padding: 30px;
+  padding-left: 0;
+  text-align: left;
+  border-top: 1px solid #ececec;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    order: 2;
+  }
+
+  .site-list__item {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    order: 0;
+  }
+}

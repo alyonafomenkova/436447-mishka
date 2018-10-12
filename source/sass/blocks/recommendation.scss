@@ -1,5 +1,15 @@
 .recommendation {
-  padding: 0 30px;
+  position: relative;
+  margin-bottom: 136px;
+}
+
+.recommendation::after {
+  content: "";
+  position: absolute;
+  bottom: -73px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  width: 100%;
+  height: 23px;
 }
 
 .recommendation__title {
@@ -9,6 +19,7 @@
 
 .recommendation__type {
   color: #63d1bb;
+  text-transform: uppercase;
 }
 
 .recommendation__description {
@@ -22,10 +33,104 @@
   width: 260px;
   height: 315px;
   background-color: #f1f1f1;
+  margin-bottom: 30px;
 }
 
 .recommendation__price {
   line-height: 24px;
   text-align: center;
   color: #444444;
+  margin-bottom: 29px;
+}
+
+@media (min-width: $tablet-width) {
+  .recommendation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recommendation__header {
+    display: flex;
+    align-items: center;
+  }
+
+  .recommendation__title {
+    width: 500px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .recommendation__type {
+    width: 110px;
+    text-align: center;
+    margin-left: auto;
+  }
+
+  .recommendation__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .recommendation__text {
+    width: 290px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .recommendation__table {
+    width: 290px;
+    line-height: 20px;
+  }
+
+  .recommendation__image {
+    width: 333px;
+    height: 404px;
+  }
+
+  .recommendation__footer {
+    position: absolute;
+    bottom: 30px;
+    width: 290px;
+  }
+
+  .recommendation__price {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .recommendation__header {
+    flex-direction: row-reverse;
+  }
+
+  .recommendation__title {
+    width: 525px;
+    margin-right: 350px;
+    font-size: 53px;
+    line-height: 57px;
+    z-index: 3;
+  }
+
+  .recommendation__type {
+    margin: 0 auto;
+  }
+
+  .recommendation__content {
+    padding-left: 175px;
+  }
+
+  .recommendation__image {
+    display: inline-block;
+    width: 525px;
+    height: 636px;
+    margin-top: -125px;
+  }
+
+  .recommendation__order {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }

@@ -1,8 +1,11 @@
 .button {
   display: block;
+  width: 260px;
   padding: 16px;
   border: solid 2px #444444;
   color: #444444;
+  text-align: center;
   text-transform: uppercase;
   background-color: #ffffff;
+  cursor: pointer;
 }

@@ -1,12 +1,14 @@
-@import "node_modules/node.normalize.scss/normalize.scss";
-@import "fonts.scss";
-@import "base.scss";
-@import "mixins.scss";
-@import "blocks/main-nav.scss";
-@import "blocks/main-logo.scss";
-/* При необходимости добавить файл с хедером.
+@import "base/normalize.scss";
+@import "base/fonts.scss";
+@import "base/base.scss";
+@import "abstract/mixins.scss";
+@import "abstract/variables.scss";
+/*------------------------------ Index page ------------------------------*/
 @import "blocks/page-header.scss";
-*/
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/user-list.scss";
+@import "blocks/special-list.scss";
 @import "blocks/page-main.scss";
 @import "blocks/categories.scss";
 @import "blocks/recommendation.scss";
