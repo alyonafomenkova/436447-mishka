@@ -1,16 +1,15 @@
 .main-nav {
   margin: 0;
   line-height: 24px;
-  position: relative;
 }
 
 .main-nav__toggle-btn {
   position: absolute;
-  top: -50px;
-  right: 0;
-  background: url("../img/icon-menu-close.svg") no-repeat #ffffff;
+  top: 30px;
+  right: 45px;
   width: 21px;
   height: 21px;
+  background: url("../img/icon-menu-close.svg") no-repeat #ffffff;
   border: none;
 }
 
@@ -27,7 +26,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /*min-width: $tablet-width;*/
     margin: 0 auto;
   }
 
