@@ -98,7 +98,12 @@
             </tr>
           </table>
         </div>
-        <img class="recommendation__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Фото рекомендуемого товара">
+        <picture>
+          <source media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+          <img class="recommendation__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260"
+            height="315" alt="Фото рекомендуемого товара">
+        </picture>
         <div class="recommendation__footer">
           <p class="recommendation__price">Цена: 990 руб.</p>
           <a class="recommendation__order button" href="#">Заказать</a>

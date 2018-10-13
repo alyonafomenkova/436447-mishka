@@ -1,46 +1,49 @@
 .recommendation {
-  position: relative;
+  padding: 0 30px;
+  padding-bottom: 40px;
   margin-bottom: 136px;
-}
-
-.recommendation::after {
-  content: "";
-  position: absolute;
-  bottom: -73px;
   background-image: url("../img/bg-zigzag-line.svg");
-  width: 100%;
-  height: 23px;
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: auto 6px;
 }
 
 .recommendation__title {
+  padding-top: 2px;
   font-size: 25px;
   line-height: 30px;
 }
 
 .recommendation__type {
+  margin-top: -15px;
   color: #63d1bb;
   text-transform: uppercase;
 }
 
 .recommendation__description {
+  margin-bottom: 31px;
   font-size: 15px;
   line-height: 24px;
   font-weight: normal;
   color: #444444;
 }
 
+.recommendation__text {
+  padding-top: 5px;
+}
+
 .recommendation__image {
   width: 260px;
   height: 315px;
+  margin-bottom: 24px;
   background-color: #f1f1f1;
-  margin-bottom: 30px;
 }
 
 .recommendation__price {
+  margin-bottom: 25px;
   line-height: 24px;
   text-align: center;
   color: #444444;
-  margin-bottom: 29px;
 }
 
 @media (min-width: $tablet-width) {
@@ -62,8 +65,8 @@
 
   .recommendation__type {
     width: 110px;
-    text-align: center;
     margin-left: auto;
+    text-align: center;
   }
 
   .recommendation__content {
@@ -109,9 +112,9 @@
   .recommendation__title {
     width: 525px;
     margin-right: 350px;
+    z-index: 3;
     font-size: 53px;
     line-height: 57px;
-    z-index: 3;
   }
 
   .recommendation__type {
