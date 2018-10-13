@@ -1,5 +1,10 @@
 .reviews {
-  margin-bottom: 94px;
+  padding: 0 30px 50px 30px;
+  margin-bottom: 35px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: auto 6px;
 }
 
 .reviews__title {
@@ -8,6 +13,7 @@
 }
 
 .reviews__text {
+  padding-bottom: 13px;
   font-size: 15px;
   line-height: 30px;
   font-weight: normal;
@@ -19,6 +25,9 @@
 }
 
 .reviews__nickname {
+  margin-top: -14px;
+  margin-bottom: 28px;
+  font-weight: normal;
   line-height: 30px;
   color: #444444;
 }
@@ -29,7 +38,7 @@
 
 .reviews__pagination {
   font-size: 0;
-  margin-bottom: 38px;
+  margin-bottom: 30px;
 }
 
 .reviews__button {
@@ -54,10 +63,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-image: url("../../img/review@1x.jpg");
-    background-repeat: no-repeat;
     margin-top: 82px;
     margin-bottom: 156px;
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
   }
 
   .reviews__title {
