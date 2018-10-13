@@ -1,15 +1,11 @@
 .page-main {
   width: 320px;
-  padding: 0 30px;
   margin: 0 auto;
+  margin-top: -17px; /* Костыль! Разберись, откуда отступ между хедером и main*/
 }
 
 .page-main__title {
-  display: block;
-  margin: 2px 0 31px -2px;
-  padding: 76px 0;
-  text-align: center;
-  background-color: #f1f1f1;
+  padding: 67px 30px 103px 30px;
   font-size: 27px;
   line-height: 30px;
   color: #010000;
@@ -27,10 +23,6 @@
   .page-main {
     width: $tablet-width;
     padding: 0 50px;
-  }
-
-  .page-main__title-wrapper {
-    margin-top: -135px;
   }
 
   .page-main__title {
