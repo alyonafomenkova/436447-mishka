@@ -37,10 +37,22 @@
 }
 
 .contacts__map {
+  position: relative;
   width: 100%;
   min-height: 457px;
   padding: 0;
   margin-bottom: 39px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 147px;
+    left: 139px;
+    z-index: 5;
+    width: 67px;
+    height: 100px;
+    background-image: url(../img/icon-map-pin.svg);
+  }
 }
 
 .contacts__write {
