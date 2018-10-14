@@ -4,19 +4,25 @@
   margin-top: -17px; /* Костыль! Разберись, откуда отступ между хедером и main*/
 }
 
+.page-main__title-wrapper {
+  background-color: #f1f1f1;
+}
+
 .page-main__title {
   padding: 67px 30px 103px 30px;
   font-size: 27px;
   line-height: 30px;
   color: #010000;
-}
 
-.page-main__title--catalog {
-  color: #000000;
-}
+  &--catalog {
+    padding-bottom: 78px;
+    padding-left: 40px;
+    color: #000000;
+  }
 
-.page-main__title--form {
-  color: #231f20;
+  &--form {
+    color: #231f20;
+  }
 }
 
 @media (min-width: $tablet-width) {
