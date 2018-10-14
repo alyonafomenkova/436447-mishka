@@ -59,9 +59,32 @@
 
 @media (min-width: $tablet-width) {
   .categories {
-    min-height: 570px;
+    position: relative;
+    padding: 0 50px;
+    font-size: 20px;
+    line-height: 30px;
     background-image: url("../../img/hero-tablet@1x.jpg");
     background-size: 1150px 746px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 22px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+    }
+
+    .categories__item::after {
+      top: 29px;
+    }
+
+    .categories__item--darker::after {
+      top: 31px;
+      right: 32px;
+    }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../../img/hero-tablet@2x.jpg");
@@ -75,19 +98,13 @@
 
   .categories__item {
     flex-grow: 1;
-    margin-top: 365px;
+    margin-top: 214px;
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 100px;
-      left: 0;
-      width: 100%;
-      height: 119px;
-      background-image: url("../img/bg-zigzag-fill.svg");
-      background-repeat: no-repeat;
-      opacity: 0.5;
-    }
+  .categories__link {
+    width: 167px;
+    padding: 30px 30px 30px 30px;
+    color: #ffffff;
   }
 }
 

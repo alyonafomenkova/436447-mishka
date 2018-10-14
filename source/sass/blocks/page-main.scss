@@ -22,12 +22,14 @@
 @media (min-width: $tablet-width) {
   .page-main {
     width: $tablet-width;
-    padding: 0 50px;
+    margin-top: -75px; /* Опять костыль из-за первого margin-top=-17px;*/
+    background-color: #fbfbfb;
+    border-top: 1px solid #ececec;
   }
 
   .page-main__title {
     margin-bottom: 83px;
-    padding-top: 97px;
+    padding-top: 130px;
     padding-bottom: 77px;
     font-size: 43px;
     line-height: 50px;
