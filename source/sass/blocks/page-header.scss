@@ -20,12 +20,12 @@
     flex-wrap: wrap;
     position: relative;
     width: $tablet-width;
-    padding: 50px;
   }
 
   .page-header__logo {
     position: absolute;
-    top: 75px;
+    top: 22px;
+    left: 50px;
     margin: 0;
     z-index: 5;
   }
