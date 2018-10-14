@@ -27,6 +27,7 @@
   width: 185px;
   margin-left: auto;
 }
+
 .contacts__details-value--link {
   padding-top: 14px;
 }
@@ -51,7 +52,7 @@
     z-index: 5;
     width: 67px;
     height: 100px;
-    background-image: url(../img/icon-map-pin.svg);
+    background-image: url("../img/icon-map-pin.svg");
   }
 }
 
