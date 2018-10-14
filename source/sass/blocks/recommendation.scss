@@ -50,11 +50,17 @@
   .recommendation {
     display: flex;
     flex-direction: column;
+    background-color: #ffffff;
+    padding: 0 50px;
+    padding-bottom: 40px;
+    background-size: auto 15px;
   }
 
   .recommendation__header {
     display: flex;
     align-items: center;
+    margin-top: 6px;
+    margin-bottom: 20px;
   }
 
   .recommendation__title {
@@ -65,7 +71,8 @@
 
   .recommendation__type {
     width: 110px;
-    margin-left: auto;
+    margin-left: 50px;
+    padding-top: 40px;
     text-align: center;
   }
 
@@ -78,6 +85,8 @@
 
   .recommendation__text {
     width: 290px;
+    margin-top: -8px;
+    margin-bottom: 37px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -94,11 +103,12 @@
 
   .recommendation__footer {
     position: absolute;
-    bottom: 30px;
+    bottom: 22px;
     width: 290px;
   }
 
   .recommendation__price {
+    margin-bottom: 32px;
     font-size: 20px;
     line-height: 24px;
   }

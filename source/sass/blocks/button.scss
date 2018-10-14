@@ -10,3 +10,9 @@
   background-color: #ffffff;
   cursor: pointer;
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 292px;
+  }
+}
