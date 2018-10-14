@@ -34,6 +34,15 @@
     width: 347px;
     order: 1;
     margin-left: auto;
+
+    &__search-icon {
+      top: 33px;
+    }
+
+    &__basket-icon {
+      top: 33px;
+      left: 24px;
+    }
   }
 
   .user-list__item {
