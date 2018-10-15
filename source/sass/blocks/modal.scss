@@ -2,12 +2,15 @@
   width: 100%;
   min-height: 336px;
   margin: 0 auto;
-  margin-top: 30px;
-  border-top: 1px solid #ececec;
+  padding: 33px 30px 46px 30px;
   text-align: center;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  box-shadow: 0 5px 10px 10px #ececec;
 }
 
 .modal__title {
+  margin-bottom: 23px;
   font-size: 25px;
   line-height: 30px;
   text-transform: uppercase;
@@ -18,6 +21,7 @@
 }
 
 .modal__form-legend {
+  margin-bottom: 28px;
   font-size: 15px;
   line-height: 30px;
   font-weight: normal;
@@ -25,8 +29,23 @@
   text-align: center;
 }
 
+.modal__form__field-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
+
 .modal__label {
+  display: block;
+  width: 76px;
+  padding: 20px 0;
   color: #444444;
+  border: 2px solid #ececec;
+
+  &--active {
+    border: 2px solid #63d1bb;
+  }
 }
 
 .modal__submit {

@@ -1,16 +1,17 @@
 .recommendation-table {
-  border-collapse: collapse;
+  width: 100%;
   font-size: 15px;
   font-weight: normal;
   color: #444444;
+  border-collapse: collapse;
 }
 
 .recommendation-table__value,
 .recommendation-table__field {
-  padding: 10px 0;
+  padding: 8px 0;
   border-bottom: 1px solid #ececec;
 }
 
 .recommendation-table__field {
-  padding-left: 40px;
+  width: 97px;
 }

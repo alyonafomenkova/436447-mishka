@@ -1,11 +1,12 @@
 .about-us {
-  margin-bottom: 60px;
+  padding: 0 30px;
+  margin-bottom: 55px;
 }
 
 .about-us__title {
+  margin-bottom: 32px;
   font-size: 25px;
   line-height: 30px;
-  margin-bottom: 32px;
 }
 
 .about-us__list {
@@ -15,29 +16,47 @@
 .about-us__item {
   position: relative;
   padding-top: 55px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   background-repeat: no-repeat;
+
+  &--materials {
+    width: 190px;
+  }
+
+  &--style,
+  &--likes,
+  &--packaging {
+    width: 200px;
+  }
+
+  &--handmade {
+    width: 210px;
+  }
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: 5px;
   }
 
   &--materials::before {
+    left: 6px;
     width: 32px;
     height: 37px;
     background-image: url("../img/icon-feature-flower.svg");
   }
 
   &--style::before {
+    left: 0;
     width: 47px;
     height: 27px;
     background-image: url("../img/icon-feature-money.svg");
   }
 
   &--likes::before {
+    top: 3px;
+    left: 7px;
     width: 34px;
     height: 27px;
     background-image: url("../img/icon-feature-heart.svg");
@@ -50,6 +69,8 @@
   }
 
   &--support::before {
+    top: 2px;
+    left: 0;
     width: 55px;
     height: 23px;
     background-image: url("../img/icon-feature-rocket.svg");
@@ -64,8 +85,8 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
-    padding: 0;
-    padding-top: 30px;
+    padding: 0 50px;
+    background-color: #ffffff;
   }
 
   .about-us__title {

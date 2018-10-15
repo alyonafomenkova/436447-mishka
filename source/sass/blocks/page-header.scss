@@ -1,9 +1,13 @@
 .page-header {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-width: 320px;
-  padding: 0 30px;
   margin: 0 auto;
+  z-index: 11;
+  background-color: transparent;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .page-header__logo {
@@ -18,14 +22,20 @@
     flex-wrap: wrap;
     position: relative;
     width: $tablet-width;
-    padding: 50px;
+    border-bottom: none;
   }
 
   .page-header__logo {
     position: absolute;
-    top: 75px;
+    top: 22px;
+    left: 50px;
     margin: 0;
     z-index: 5;
+  }
+
+  .page-header__logo-img {
+    width: 112px;
+    height: 46px;
   }
 }
 
@@ -38,5 +48,10 @@
   .page-header__logo {
     top: 30px;
     left: 500px;
+  }
+
+  .page-header__logo-img {
+    width: 149px;
+    height: 72px;
   }
 }

@@ -1,11 +1,12 @@
 .special-list__item {
   display: none;
+  font-weight: normal;
 }
 
 @media (min-width: $tablet-width) {
   .special-list {
     order: 3;
-    padding-top: 30px;
+    padding-top: 26px;
     font-size: 15px;
 
     &__item--delivery {
