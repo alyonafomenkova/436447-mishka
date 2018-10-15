@@ -17,6 +17,7 @@
 
 .categories__list {
   @include list-reset;
+  margin-bottom: 22px;
 }
 
 .categories__item {

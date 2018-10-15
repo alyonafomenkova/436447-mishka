@@ -1,7 +1,6 @@
 .page-main {
   width: 320px;
   margin: 0 auto;
-  margin-top: -17px; /* Костыль! Разберись, откуда отступ между хедером и main*/
 }
 
 .page-main__title-wrapper {
@@ -9,7 +8,8 @@
 }
 
 .page-main__title {
-  padding: 67px 30px 103px 30px;
+  margin: 0;
+  padding: 67px 30px 123px 30px;
   font-size: 27px;
   line-height: 30px;
   color: #010000;
