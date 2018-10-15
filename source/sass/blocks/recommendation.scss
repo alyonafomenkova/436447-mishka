@@ -10,13 +10,12 @@
 
 .recommendation__title {
   margin: 0;
-  padding-top: 2px;
   font-size: 25px;
   line-height: 30px;
 }
 
 .recommendation__type {
-  margin-top: -15px;
+  margin-top: 5px;
   color: #63d1bb;
   text-transform: uppercase;
 }
@@ -61,12 +60,13 @@
   .recommendation__header {
     display: flex;
     align-items: center;
-    margin-top: 6px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 39px;
   }
 
   .recommendation__title {
     width: 500px;
+    padding-top: 18px;
     font-size: 43px;
     line-height: 50px;
   }

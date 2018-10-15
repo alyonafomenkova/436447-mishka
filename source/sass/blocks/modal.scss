@@ -1,5 +1,5 @@
 .modal {
-  width: 100%;
+  width: 320px;
   min-height: 336px;
   margin: 0 auto;
   padding: 33px 30px 46px 30px;
@@ -49,6 +49,7 @@
 }
 
 .modal__submit {
+  margin: 0 auto;
   color: #ffffff;
   background-color: #63d1bb;
   border: none;
@@ -56,15 +57,34 @@
 
 @media (min-width: $tablet-width) {
   .modal {
-    width: 568px;
+    width: 566px;
+    padding: 0 108px;
+    margin-bottom: 10px;
   }
 
   .modal__title {
+    width: 360px;
     font-size: 30px;
     line-height: 57px;
   }
 
+  .modal__form-group {
+    width: 350px;
+    margin: 0;
+    padding: 0;
+  }
+
   .modal__form-legend {
     font-size: 17px;
+  }
+
+  .modal__label {
+    width: 112px;
+    padding: 18px;
+  }
+
+  .modal__submit {
+    width: 350px;
+    margin-bottom: 46px;
   }
 }

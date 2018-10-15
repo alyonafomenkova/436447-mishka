@@ -86,10 +86,14 @@
 @media (min-width: $tablet-width) {
   .about-us {
     padding: 0 50px;
+    margin-bottom: 0;
     background-color: #ffffff;
   }
 
   .about-us__title {
+    margin: 0;
+    margin-bottom: 48px;
+    padding-top: 56px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -98,25 +102,37 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    padding-bottom: 29px;
     font-size: 20px;
     line-height: 22px;
   }
 
   .about-us__item {
     width: 50%;
+    margin-bottom: 55px;
 
     &--materials {
       order: -2;
-      padding-right: 145px;
+      padding-right: 130px;
+    }
+
+    &--style {
+      order: -1;
+      padding-right: 80px;
     }
 
     &--handmade {
       order: -2;
+      padding-right: 80px;
     }
 
-    &--style,
     &--support {
       order: -1;
+    }
+
+    &--likes,
+    &--packaging {
+      padding-right: 100px;
     }
   }
 }
