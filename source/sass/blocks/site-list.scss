@@ -31,7 +31,6 @@
 @media (min-width: $desktop-width) {
   .site-list {
     order: 0;
-    width: 380px;
   }
 
   .site-list__item {
@@ -40,8 +39,12 @@
     font-size: 17px;
 
     &--catalog {
-      padding-right: 34px;
+      width: 184px;
       border-right: 1px solid #ececec;
+    }
+
+    &--knitting {
+      margin-left: 35px;
     }
   }
 }

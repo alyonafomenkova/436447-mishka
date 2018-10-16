@@ -67,3 +67,13 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .user-list {
+    width: 308px;
+  }
+
+  .user-list__item--search {
+    margin-left: 60px;
+  }
+}

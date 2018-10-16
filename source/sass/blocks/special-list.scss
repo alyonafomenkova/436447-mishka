@@ -17,20 +17,21 @@
 
 @media (min-width: $desktop-width) {
   .special-list {
-    display: flex;
     padding-top: 17px;
   }
 
   .special-list__item {
     display: block;
+    width: 160px;
     font-weight: bold;
 
     &--sale {
       margin-left: 60px;
-      margin-right: 505px;
+      margin-right: 435px;
     }
 
     &--delivery {
+      width: 235px;
       font-weight: normal;
     }
   }

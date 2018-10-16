@@ -40,11 +40,12 @@
 @media (min-width: $desktop-width) {
   .page-header {
     width: $desktop-width;
+    padding: 0 50px;
   }
 
   .page-header__logo {
     top: 9px;
-    left: 500px;
+    left: 550px;
   }
 
   .page-header__logo-img {
