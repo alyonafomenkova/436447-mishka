@@ -5,12 +5,12 @@
   text-align: left;
   border-top: 1px solid #ececec;
 
-  &--search,
-  &--basket {
+  &--search {
     position: relative;
   }
 
   &--basket {
+    position: relative;
     border-bottom: 1px solid #ececec;
   }
 }
@@ -36,14 +36,6 @@
     margin-left: auto;
     padding-top: 2px;
 
-    &__item {
-      padding-bottom: 31px;
-
-      &--search {
-        padding-left: 80px;
-      }
-    }
-
     &__search-icon {
       top: 33px;
     }
@@ -55,9 +47,11 @@
   }
 
   .user-list__item {
+    padding-bottom: 31px;
     border: none;
 
     &--search {
+      padding-left: 80px;
       font-size: 0;
       border-left: 1px solid #ececec;
       border-right: 1px solid #ececec;
