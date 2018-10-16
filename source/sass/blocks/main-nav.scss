@@ -4,16 +4,19 @@
   line-height: 24px;
 }
 
-.main-nav--closed .main-nav__toggle {
+.main-nav__toggle {
   position: absolute;
-  top: -53px;
-  left: 104px;
   z-index: 7;
   width: 30px;
   height: 30px;
   font-size: 0;
   border: none;
   background: none;
+}
+
+.main-nav--closed .main-nav__toggle {
+  top: -53px;
+  left: 104px;
 
   &::before {
     content: "";
@@ -27,15 +30,8 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  position: absolute;
   top: -53px;
   right: -4px;
-  z-index: 7;
-  width: 30px;
-  height: 30px;
-  font-size: 0;
-  border: none;
-  background: none;
 
   &::before {
     content: "";
