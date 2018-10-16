@@ -1,5 +1,6 @@
 .main-nav {
   position: relative;
+  min-width: 320px;
   margin: 0 auto;
   line-height: 24px;
 }
@@ -16,13 +17,13 @@
 
 .main-nav--closed .main-nav__toggle {
   top: -53px;
-  left: 104px;
+  right: 30px;
 
   &::before {
     content: "";
     position: absolute;
     top: 3px;
-    right: 4px;
+    right: 2px;
     width: 21px;
     height: 14px;
     background: url("../img/icon-menu-open.svg") 50% 50% no-repeat;
@@ -31,7 +32,7 @@
 
 .main-nav--opened .main-nav__toggle {
   top: -53px;
-  right: -4px;
+  right: 27px;
 
   &::before {
     content: "";
