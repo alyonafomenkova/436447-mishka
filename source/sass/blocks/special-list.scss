@@ -16,13 +16,22 @@
 }
 
 @media (min-width: $desktop-width) {
-  .special-list__item {
-    display: block;
-  }
-
   .special-list {
     display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
+    padding-top: 17px;
+  }
+
+  .special-list__item {
+    display: block;
+    font-weight: bold;
+
+    &--sale {
+      margin-left: 60px;
+      margin-right: 505px;
+    }
+
+    &--delivery {
+      font-weight: normal;
+    }
   }
 }
