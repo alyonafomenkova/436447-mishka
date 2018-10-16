@@ -37,9 +37,8 @@
 
 @media (min-width: $tablet-width) {
   .user-list {
-    width: 347px;
     order: 1;
-    margin-left: auto;
+    margin-left: 320px;
     padding-top: 2px;
 
     &__search-icon {
@@ -48,7 +47,7 @@
 
     &__basket-icon {
       top: 33px;
-      left: 24px;
+      left: 25px;
     }
   }
 
@@ -57,10 +56,14 @@
     border: none;
 
     &--search {
-      padding-left: 80px;
+      width: 83px;
       font-size: 0;
       border-left: 1px solid #ececec;
       border-right: 1px solid #ececec;
+    }
+
+    &--basket {
+      margin-left: 8px;
     }
   }
 }
