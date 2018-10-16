@@ -15,6 +15,12 @@
   }
 }
 
+.user-list__link {
+  display: block;
+  width: 200px;
+  word-wrap: break-word;
+}
+
 .user-list__search-icon,
 .user-list__basket-icon {
   position: absolute;

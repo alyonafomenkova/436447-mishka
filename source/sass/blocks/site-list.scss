@@ -5,6 +5,12 @@
   border-top: 1px solid #ececec;
 }
 
+.site-list__link {
+  display: block;
+  width: 200px;
+  word-wrap: break-word;
+}
+
 @media (min-width: $tablet-width) {
   .site-list {
     order: 2;
