@@ -20,6 +20,7 @@
     flex-wrap: wrap;
     position: relative;
     width: $tablet-width;
+    padding: 0 50px;
     border-bottom: none;
   }
 
@@ -40,12 +41,13 @@
 @media (min-width: $desktop-width) {
   .page-header {
     width: $desktop-width;
-    padding: 0 50px;
+
   }
 
   .page-header__logo {
     top: 9px;
-    left: 550px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .page-header__logo-img {

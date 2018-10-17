@@ -37,43 +37,54 @@
 
 @media (min-width: $tablet-width) {
   .user-list {
+    flex-wrap: wrap;
+    width: 350px;
     order: 1;
-    margin-left: 320px;
+    margin-left: auto;
     padding-top: 2px;
+
+    &__link {
+      width: auto;
+      padding-top: 28px;
+    }
 
     &__search-icon {
       top: 33px;
+      left: 35px;
     }
 
     &__basket-icon {
       top: 33px;
-      left: 25px;
+      left: -52px;
     }
   }
 
   .user-list__item {
+    padding: 0;
     padding-bottom: 31px;
     border: none;
 
     &--search {
-      width: 83px;
+      width: 85px;
       font-size: 0;
       border-left: 1px solid #ececec;
       border-right: 1px solid #ececec;
-    }
-
-    &--basket {
-      margin-left: 8px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .user-list {
-    width: 308px;
+    width: 50%;
+    margin: 0;
+
+    &__basket-icon {
+      top: 33px;
+      left: -55px;
+    }
   }
 
   .user-list__item--search {
-    margin-left: 60px;
+    margin-left: 174px;
   }
 }

@@ -15,6 +15,12 @@
   .site-list {
     order: 2;
     width: 322px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    &__link {
+      width: auto;
+    }
   }
 
   .site-list__item {
@@ -31,6 +37,7 @@
 @media (min-width: $desktop-width) {
   .site-list {
     order: 0;
+    width: 50%;
   }
 
   .site-list__item {
