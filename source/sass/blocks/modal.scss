@@ -10,6 +10,8 @@
 }
 
 .modal__title {
+  width: 148px;
+  margin: 0 auto;
   margin-bottom: 23px;
   font-size: 25px;
   line-height: 30px;
@@ -17,6 +19,7 @@
 }
 
 .modal__form-group {
+  padding: 0;
   border: none;
 }
 

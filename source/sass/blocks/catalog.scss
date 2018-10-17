@@ -1,5 +1,6 @@
 .catalog {
-  padding: 10px 30px;
+  padding: 0 30px;
+  padding-top: 30px;
 }
 
 .catalog__list {
@@ -22,15 +23,16 @@
 }
 
 .catalog-item__title {
-  padding-top: 14px;
+  margin-top: 25px;
+  margin-bottom: 0;
   text-align: left;
   font-size: 17px;
   line-height: 24px;
 }
 
 .catalog-item__description {
-  margin-top: -8px;
-  margin-bottom: 18px;
+  margin-top: 5px;
+  margin-bottom: 20px;
   font-size: 13px;
   line-height: 30px;
   font-weight: normal;
@@ -42,7 +44,7 @@
   justify-content: space-around;
   position: relative;
   padding-top: 5px;
-  padding-bottom: 11px;
+  margin-bottom: 13px;
   border-top: 1px solid #ececec;
 }
 
@@ -54,7 +56,7 @@
 
 .catalog-item__basket-icon {
   position: absolute;
-  top: 20px;
+  top: 22px;
   right: 0;
 }
 

@@ -1,5 +1,5 @@
 .video-post {
-  margin: -8px 30px 58px 30px;
+  margin: 0 30px 58px 30px;
   padding-bottom: 33px;
   border: 1px solid #ececec;
 }
@@ -12,7 +12,7 @@
 
 .video-post__header {
   position: relative;
-  margin-bottom: 8px;
+  margin-bottom: 13px;
 
   &::before {
     content: "";
@@ -50,8 +50,13 @@
   }
 }
 
+.video-post__preview-img {
+  width: 260px;
+  height: 150px;
+}
+
 .video-post__info {
-  margin-top: 15px;
+  margin-top: 13px;
   padding: 0 28px;
 }
 
