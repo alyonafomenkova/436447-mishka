@@ -146,6 +146,14 @@
 
   .contacts__title {
     width: 350px;
+    margin-top: 12px;
+    font-size: 53px;
+    line-height: 57px;
+
+    &::after {
+      top: -7px;
+      left: -113px;
+    }
   }
 
   .contacts__details {
@@ -160,13 +168,20 @@
   .contacts__map {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 50px;
     width: 525px;
     background: url("../img/map-desktop@1x.jpg") no-repeat;
+
+    &::after {
+      top: 146px;
+      left: 239px;
+    }
   }
 
   .contacts__write {
     position: absolute;
-    bottom: 110px;
+    left: 224px;
+    bottom: 50px;
+    padding-top: 15px;
   }
 }

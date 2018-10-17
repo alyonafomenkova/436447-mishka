@@ -139,11 +139,38 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
-    padding: 0 175px;
+    padding: 0 220px;
+    padding-top: 9px;
   }
 
   .about-us__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .about-us__item--materials {
+    padding-left: 5px;
+
+    &::before {
+      left: 13px;
+    }
+  }
+  .about-us__item--style {
+    padding-left: 5px;
+    padding-right: 86px;
+
+    &::before {
+      left: 7px;
+    }
+  }
+
+  .about-us__item--likes {
+    padding-left: 5px;
+    padding-right: 108px;
+
+    &::before {
+      top: 5px;
+      left: 14px;
+    }
   }
 }

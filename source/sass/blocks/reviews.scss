@@ -68,7 +68,6 @@
     position: relative;
     padding: 0 50px;
     margin-bottom: 0;
-    background-color: #ffffff;
     background-image: url("../../img/review@1x.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -130,15 +129,34 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding-left: 175px;
+    padding-left: 223px;
+    padding-bottom: 61px;
+    margin-bottom: 60px;
+    background-size: 350px 457px;
+    background-position: 50px 5px;
+
+    &::after {
+      bottom: -8px;
+      left: 0px;
+      height: 23px;
+      background-size: 100% 23px;
+      background-position: 21px bottom;
+      background-repeat: no-repeat;
+    }
   }
 
   .reviews__title {
+    margin-top: 75px;
     font-size: 53px;
     line-height: 57px;
   }
 
   .reviews__text {
     width: 773px;
+    margin-bottom: 11px;
+  }
+
+  .reviews__write-wrap {
+    margin-top: 84px;
   }
 }
