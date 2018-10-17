@@ -15,3 +15,10 @@
 .recommendation-table__field {
   width: 97px;
 }
+
+@media (min-width: $desktop-width) {
+  .recommendation-table__value,
+  .recommendation-table__field {
+    padding: 9px 0 10px 0;
+  }
+}

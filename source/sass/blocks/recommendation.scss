@@ -122,35 +122,48 @@
 }
 
 @media (min-width: $desktop-width) {
+  .recommendation {
+    padding-bottom: 63px;
+    background-size: 1050px 23px;
+    background-position: 24px bottom;
+    background-repeat: no-repeat;
+  }
+
   .recommendation__header {
     flex-direction: row-reverse;
+    margin-top: 91px;
+    margin-left: -22px;
+    margin-bottom: 39px;
   }
 
   .recommendation__title {
-    width: 525px;
-    margin-right: 350px;
+    width: 528px;
     z-index: 3;
+    margin-right: auto;
     font-size: 53px;
     line-height: 57px;
   }
 
   .recommendation__type {
-    margin: 0 auto;
+    margin-right: 32px;
   }
 
   .recommendation__content {
     padding-left: 175px;
   }
 
+  .recommendation__text {
+    margin-bottom: 50px;
+  }
+
   .recommendation__image {
     display: inline-block;
     width: 525px;
     height: 636px;
-    margin-top: -125px;
+    margin-top: -158px;
   }
 
-  .recommendation__order {
-    font-size: 20px;
-    line-height: 24px;
+  .recommendation__footer {
+    bottom: 32px;
   }
 }
