@@ -87,7 +87,6 @@
   .about-us {
     padding: 0 50px;
     margin-bottom: 0;
-    background-color: #ffffff;
   }
 
   .about-us__title {
@@ -114,25 +113,47 @@
     &--materials {
       order: -2;
       padding-right: 130px;
+
+      &::before {
+        left: 9px;
+      }
     }
 
     &--style {
       order: -1;
       padding-right: 80px;
+
+      &::before {
+        top: 3px;
+      }
     }
 
     &--handmade {
       order: -2;
       padding-right: 80px;
+
+      &::before {
+        top: 4px;
+      }
     }
 
     &--support {
       order: -1;
+
+      &::before {
+        top: 6px;
+        left: -5px;
+      }
     }
 
     &--likes,
     &--packaging {
+      padding-top: 57px;
       padding-right: 100px;
+
+      &::before {
+        top: 9px;
+      }
     }
   }
 }
@@ -140,7 +161,7 @@
 @media (min-width: $desktop-width) {
   .about-us {
     padding: 0 220px;
-    padding-top: 9px;
+    margin-top: 30px;
   }
 
   .about-us__title {
