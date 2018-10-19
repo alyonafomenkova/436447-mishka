@@ -68,9 +68,18 @@
     margin-top: -43px;
   }
 
+  .page-main__title-wrapper::after {
+    height: 34px;
+    background-size: auto 34px;
+  }
+
   .page-main__title {
     padding-bottom: 62px;
     font-size: 53px;
     line-height: 57px;
+
+    &--catalog {
+      padding-bottom: 104px;
+    }
   }
 }
