@@ -79,21 +79,51 @@
 }
 
 @media (min-width: $tablet-width) {
+  .video-post {
+    margin: 0 50px 62px 50px;
+    padding-bottom: 47px;
+  }
+
   .video-post__wrapper-layout {
     flex-direction: column;
   }
 
   .video-post__preview-wrapper {
     order: -1;
-    width: 668px;
+
+    &::before {
+      top: 189px;
+      left: 283px;
+    }
+  }
+
+  .video-post__preview-img {
+    width: 666px;
+    height: 455px;
+  }
+
+  .video-post__header {
+    margin-top: 315px;
+    margin-bottom: 0;
+
+    &::before {
+      top: 23px;
+      left: 40px;
+    }
   }
 
   .video-post__title {
     font-size: 20px;
+    padding-left: 106px;
+  }
+
+  .video-post__info {
+    margin: 0;
   }
 
   .video-post__text {
     width: 100%;
+    margin-bottom: 38px;
     font-size: 15px;
     line-height: 30px;
   }
