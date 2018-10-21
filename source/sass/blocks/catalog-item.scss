@@ -96,7 +96,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog-item {
-    flex-direction: column;
+    display: block;
     border-top: none;
     width: 316px;
   }
@@ -115,14 +115,14 @@
   }
 
   .catalog-item__info-top {
-    margin-bottom: 15px;
+    margin-bottom: 40px;
+
+    &--toy {
+      margin-bottom: 15px;
+    }
   }
 
   .catalog-item__title {
-    margin-top: 2px;
-
-    &--toy {
-      margin-top: 25px; // Почему этот отступ действует на всех, а не только для __title--toy
-    }
+    margin-top: 26px;
   }
 }
