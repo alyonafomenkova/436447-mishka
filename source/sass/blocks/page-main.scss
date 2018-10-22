@@ -16,11 +16,13 @@
 
   &--catalog {
     padding-bottom: 78px;
-    padding-left: 40px;
+    text-align: center;
     color: #000000;
   }
 
   &--form {
+    padding-bottom: 78px;
+    text-align: center;
     color: #231f20;
   }
 }
@@ -28,9 +30,24 @@
 @media (min-width: $tablet-width) {
   .page-main {
     width: $tablet-width;
-    margin-top: -73px; /* Опять костыль из-за первого margin-top=-17px;*/
-    background-color: #f9f9f9;
+    margin-top: -63px;
     border-top: 1px solid #ececec;
+  }
+
+  .page-main__title-wrapper {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -12px;
+      width: 100%;
+      height: 22px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: auto 22.7px;
+    }
   }
 
   .page-main__title {
@@ -39,19 +56,34 @@
     padding-bottom: 77px;
     font-size: 43px;
     line-height: 50px;
+
+    &--catalog,
+    &--form {
+      padding-top: 97px;
+      margin-bottom: 51px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main {
     width: $desktop-width;
-    padding: 0 100px;
+    margin-top: -43px;
+  }
+
+  .page-main__title-wrapper::after {
+    height: 34px;
+    background-size: auto 34px;
   }
 
   .page-main__title {
-    padding: 100px 92px;
-    margin-top: 97px;
+    padding-bottom: 62px;
     font-size: 53px;
     line-height: 57px;
+
+    &--catalog,
+    &--form {
+      padding-bottom: 104px;
+    }
   }
 }

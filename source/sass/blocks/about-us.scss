@@ -86,10 +86,13 @@
 @media (min-width: $tablet-width) {
   .about-us {
     padding: 0 50px;
-    background-color: #ffffff;
+    margin-bottom: 0;
   }
 
   .about-us__title {
+    margin: 0;
+    margin-bottom: 48px;
+    padding-top: 53px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -98,36 +101,98 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    padding-bottom: 29px;
     font-size: 20px;
     line-height: 22px;
   }
 
   .about-us__item {
     width: 50%;
+    margin-bottom: 55px;
 
     &--materials {
       order: -2;
-      padding-right: 145px;
+      padding-right: 130px;
+
+      &::before {
+        left: 9px;
+      }
+    }
+
+    &--style {
+      order: -1;
+      padding-right: 80px;
+
+      &::before {
+        top: 3px;
+      }
     }
 
     &--handmade {
       order: -2;
+      padding-right: 80px;
+
+      &::before {
+        top: 4px;
+      }
     }
 
-    &--style,
     &--support {
       order: -1;
+
+      &::before {
+        top: 6px;
+        left: -5px;
+      }
+    }
+
+    &--likes,
+    &--packaging {
+      padding-top: 57px;
+      padding-right: 100px;
+
+      &::before {
+        top: 9px;
+      }
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .about-us {
-    padding: 0 175px;
+    padding: 0 220px;
+    margin-top: 30px;
   }
 
   .about-us__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .about-us__item--materials {
+    padding-left: 5px;
+
+    &::before {
+      left: 13px;
+    }
+  }
+
+  .about-us__item--style {
+    padding-left: 5px;
+    padding-right: 86px;
+
+    &::before {
+      left: 7px;
+    }
+  }
+
+  .about-us__item--likes {
+    padding-left: 5px;
+    padding-right: 108px;
+
+    &::before {
+      top: 5px;
+      left: 14px;
+    }
   }
 }

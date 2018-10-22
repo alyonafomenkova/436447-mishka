@@ -21,7 +21,7 @@
       <button class="main-nav__toggle">Открыть меню</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--catalog">
-          <a class="site-list__link site-list__link--active">Каталог товаров</a>
+          <a class="site-list__link site-list__current">Каталог товаров</a>
         </li>
         <li class="site-list__item site-list__item--knitting">
           <a class="site-list__link" href="form.html">Вязание на заказ</a>
@@ -74,11 +74,11 @@
             <picture>
               <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
-              <img src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Фото игрушки Зайчик-попрыгайчик">
+              <img class="catalog-item__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Фото игрушки Зайчик-попрыгайчик">
             </picture>
           </a>
           <div class="catalog-item__wrap">
-            <div class="catalog-item__info--top">
+            <div class="catalog-item__info-top">
               <h2 class="catalog-item__title">
                 <a class="catalog-item__title-link">Зайчик-попрыгайчик</a>
               </h2>
@@ -103,11 +103,11 @@
             <picture>
               <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
-              <img src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Фото корзинки для белья">
+              <img class="catalog-item__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Фото корзинки для белья">
             </picture>
           </a>
           <div class="catalog-item__wrap">
-            <div class="catalog-item__info--top">
+            <div class="catalog-item__info-top">
               <h2 class="catalog-item__title">
                 <a class="catalog-item__title-link">Корзинка для белья</a>
               </h2>
@@ -132,17 +132,17 @@
             <picture>
               <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg, img/photo-toys-tablet@2x.jpg 2x">
-              <img src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@1x.jpg 2x" alt="Фото корзинки для игрушек">
+              <img class="catalog-item__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@1x.jpg 2x" alt="Фото корзинки для игрушек">
             </picture>
           </a>
           <div class="catalog-item__wrap">
-            <div class="catalog-item__info--top">
-              <h2 class="catalog-item__title">
+            <div class="catalog-item__info-top catalog-item__info-top--toy">
+              <h2 class="catalog-item__title catalog-item__title--toy">
                 <a class="catalog-item__title-link">Большая корзинка для игрушек</a>
               </h2>
               <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
             </div>
-            <div class="catalog-item__purchase-wrapper">
+            <div class="catalog-item__purchase-wrapper catalog-item__purchase-wrapper--toy">
               <p class="catalog-item__price">1 500 руб.</p>
               <a class="catalog-item__order js-order" href="#">
                 <span class="visually-hidden">Добавить в корзину</span>
@@ -168,7 +168,7 @@
             <picture>
               <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg 2x">
-              <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео процесса производства">
+              <img class="video-post__preview-img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео процесса производства">
             </picture>
           </div>
           <div class="video-post__info">

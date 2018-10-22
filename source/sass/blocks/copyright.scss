@@ -14,3 +14,13 @@
 .copyright__icon {
   margin-left: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding-top: 58px;
+  }
+
+  .copyright__title {
+    padding-top: 5px;
+  }
+}

@@ -6,7 +6,8 @@
 @media (min-width: $tablet-width) {
   .special-list {
     order: 3;
-    padding-top: 26px;
+    flex-wrap: wrap;
+    padding-top: 20px;
     font-size: 15px;
 
     &__item--delivery {
@@ -16,13 +17,23 @@
 }
 
 @media (min-width: $desktop-width) {
-  .special-list__item {
-    display: block;
+  .special-list {
+    padding-top: 17px;
   }
 
-  .special-list {
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
+  .special-list__item {
+    display: block;
+    width: 160px;
+    font-weight: bold;
+
+    &--sale {
+      margin-left: 60px;
+      margin-right: 435px;
+    }
+
+    &--delivery {
+      width: 235px;
+      font-weight: normal;
+    }
   }
 }

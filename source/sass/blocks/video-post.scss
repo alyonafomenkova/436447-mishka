@@ -1,5 +1,5 @@
 .video-post {
-  margin: -8px 30px 58px 30px;
+  margin: 0 30px 58px 30px;
   padding-bottom: 33px;
   border: 1px solid #ececec;
 }
@@ -12,7 +12,7 @@
 
 .video-post__header {
   position: relative;
-  margin-bottom: 8px;
+  margin-bottom: 13px;
 
   &::before {
     content: "";
@@ -50,8 +50,13 @@
   }
 }
 
+.video-post__preview-img {
+  width: 260px;
+  height: 150px;
+}
+
 .video-post__info {
-  margin-top: 15px;
+  margin-top: 13px;
   padding: 0 28px;
 }
 
@@ -74,21 +79,51 @@
 }
 
 @media (min-width: $tablet-width) {
+  .video-post {
+    margin: 0 50px 62px 50px;
+    padding-bottom: 47px;
+  }
+
   .video-post__wrapper-layout {
     flex-direction: column;
   }
 
   .video-post__preview-wrapper {
     order: -1;
-    width: 668px;
+
+    &::before {
+      top: 189px;
+      left: 283px;
+    }
+  }
+
+  .video-post__preview-img {
+    width: 666px;
+    height: 455px;
+  }
+
+  .video-post__header {
+    margin-top: 315px;
+    margin-bottom: 0;
+
+    &::before {
+      top: 23px;
+      left: 40px;
+    }
   }
 
   .video-post__title {
     font-size: 20px;
+    padding-left: 106px;
+  }
+
+  .video-post__info {
+    margin: 0;
   }
 
   .video-post__text {
     width: 100%;
+    margin-bottom: 38px;
     font-size: 15px;
     line-height: 30px;
   }
@@ -99,22 +134,52 @@
 }
 
 @media (min-width: $desktop-width) {
+  .video-post {
+    padding-bottom: 60px;
+    margin-bottom: 105px;
+  }
+
   .video-post__wrapper-layout {
     align-items: flex-end;
   }
 
   .video-post__header {
     max-width: 350px;
+    margin-top: -375px;
+
+    &::before {
+      left: 4px;
+      top: -37px;
+    }
   }
 
-  .vvideo-post__preview-wrapper {
-    position: absolute;
-    left: 0;
+  .video-post__title {
+    width: 150px;
+    padding: 0;
+    margin-right: 140px;
+  }
+
+  .video-post__preview-wrapper {
+    width: 682px;
+    height: 455px;
+    margin-right: auto;
+
+    &::before {
+      left: 291px;
+    }
+  }
+
+  .video-post__preview-img {
     width: 682px;
   }
 
   .video-post__info {
     width: 350px;
+  }
+
+  .video-post__text {
+    padding-left: 33px;
+    margin-bottom: 48px;
   }
 
   .video-post__btn-order {

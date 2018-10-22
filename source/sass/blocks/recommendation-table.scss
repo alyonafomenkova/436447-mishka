@@ -15,3 +15,17 @@
 .recommendation-table__field {
   width: 97px;
 }
+
+@media (min-width: $tablet-width) {
+  .recommendation-table__value,
+  .recommendation-table__field {
+    padding: 7px 0 11px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .recommendation-table__value,
+  .recommendation-table__field {
+    padding: 9px 0 11px 0;
+  }
+}

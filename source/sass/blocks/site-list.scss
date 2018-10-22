@@ -5,21 +5,53 @@
   border-top: 1px solid #ececec;
 }
 
+.site-list__link {
+  display: block;
+  width: 200px;
+  word-wrap: break-word;
+}
+
 @media (min-width: $tablet-width) {
   .site-list {
     order: 2;
-    width: 334px;
+    width: 322px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    &__link {
+      width: auto;
+    }
   }
 
   .site-list__item {
-    padding: 25px 0;
+    padding: 20px 0;
     font-size: 15px;
     border: none;
+
+    &--catalog {
+      width: 168px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-list {
     order: 0;
+    width: 50%;
+  }
+
+  .site-list__item {
+    padding: 30px 0;
+    padding-bottom: 34px;
+    font-size: 17px;
+
+    &--catalog {
+      width: 184px;
+      border-right: 1px solid #ececec;
+    }
+
+    &--knitting {
+      margin-left: 35px;
+    }
   }
 }
