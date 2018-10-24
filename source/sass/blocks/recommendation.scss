@@ -76,7 +76,7 @@
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
-    padding-bottom: 34px;
+    padding-bottom: 30px;
     margin-bottom: 9px;
 
     &::after {
@@ -132,6 +132,7 @@
   .recommendation__image {
     width: 333px;
     height: 404px;
+    margin-top: 5px;
   }
 
   .recommendation__footer {
@@ -141,7 +142,7 @@
   }
 
   .recommendation__price {
-    margin-bottom: 32px;
+    margin-bottom: 36px;
     font-size: 20px;
     line-height: 24px;
   }
