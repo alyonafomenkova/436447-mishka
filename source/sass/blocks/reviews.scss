@@ -63,16 +63,17 @@
   width: 130px;
   height: 52px;
   background-color: transparent;
-  background-repeat: no-repeat;
   background-position: center;
   border: 1px solid #ececec;
+}
 
-  &--prev {
-    background-image: url("../img/icon-left-arrow.svg");
+.reviews__button-arrow {
+  &:hover {
+    opacity: 0.6;
   }
 
-  &--next {
-    background-image: url("../img/icon-right-arrow.svg");
+  &:active {
+    opacity: 0.3;
   }
 }
 
