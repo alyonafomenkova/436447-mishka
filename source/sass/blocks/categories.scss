@@ -162,7 +162,7 @@
     background-image: url("../../img/hero-desktop@1x.jpg");
 
     &::after {
-      bottom: -17px;
+      bottom: -14px;
       height: 34px;
       background-position-x: center;
       background-size: 1250px;
@@ -175,6 +175,7 @@
 
   .categories__item {
     width: 525px;
+    padding-bottom: 30px;
   }
 
   .categories__interior-icon {
