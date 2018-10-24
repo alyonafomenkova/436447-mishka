@@ -22,12 +22,14 @@
 
 .recommendation__title {
   margin: 0;
+  word-wrap: break-word;
   font-size: 25px;
   line-height: 30px;
 }
 
 .recommendation__type {
   margin-top: 5px;
+  word-wrap: break-word;
   color: #63d1bb;
   text-transform: uppercase;
 }
@@ -47,6 +49,7 @@
 
 .recommendation__text {
   padding-top: 5px;
+  word-wrap: break-word;
 }
 
 .recommendation__image {
@@ -58,9 +61,14 @@
 
 .recommendation__price {
   margin-bottom: 25px;
+  word-wrap: break-word;
   line-height: 24px;
   text-align: center;
   color: #444444;
+}
+
+.recommendation__order {
+  word-wrap: break-word;
 }
 
 @media (min-width: $tablet-width) {
