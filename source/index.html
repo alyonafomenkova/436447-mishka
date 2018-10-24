@@ -112,7 +112,7 @@
         </picture>
         <div class="recommendation__footer">
           <p class="recommendation__price">Цена: 990 руб.</p>
-          <a class="recommendation__order button" href="#">Заказать</a>
+          <a class="recommendation__order button js-modal" href="#">Заказать</a>
         </div>
       </div>
     </section>
@@ -252,26 +252,26 @@
   </footer>
 
   <section class="modal">
-    <h2 class="modal__title">Добавить в корзину</h2>
+    <div class="modal__overlay"></div>
+    <h2 class="visually-hidden">Форма заказа товара</h2>
     <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
+      <h2 class="modal__title">Добавить в корзину</h2>
       <fieldset class="modal__form-group">
         <legend class="modal__form-legend">Выберите размер</legend>
         <div class="modal__form__field-wrapper">
-          <label class="modal__label modal__label--active">S
-            <input class="visually-hidden" type="radio" name="size" value="S">
-          </label>
-          <label class="modal__label">M
-            <input class="visually-hidden" type="radio" name="size" value="M">
-          </label>
-          <label class="modal__label">L
-            <input class="visually-hidden" type="radio" name="size" value="L">
-          </label>
+          <input class="modal__input visually-hidden" id="size-S" type="radio" name="size" value="S" checked>
+          <label class="modal__label" for="size-S">S </label>
+          <input class="modal__input visually-hidden" id="size-M" type="radio" name="size" value="M">
+          <label class="modal__label" for="size-M">M</label>
+          <input class="modal__input visually-hidden" id="size-L" type="radio" name="size" value="L">
+          <label class="modal__label" for="size-L">L</label>
         </div>
       </fieldset>
       <button class="modal__submit button" type="submit">Добавить</button>
     </form>
   </section>
   <script src="js/menu-toggle.js"></script>
+  <script src="js/popup.js"></script>
 </body>
 
 </html>

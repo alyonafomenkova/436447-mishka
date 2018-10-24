@@ -1,18 +1,44 @@
 .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 150;
+  width: 100%;
+}
+
+.modal-show {
+  display: block;
+}
+
+.modal__overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 160;
+  background-color: #ffffff;
+  opacity: 0.9;
+}
+
+.modal__form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 200;
   width: 320px;
-  min-height: 336px;
-  margin: 0 auto;
-  padding: 33px 30px 46px 30px;
+  padding: 30px;
+  padding-bottom: 46px;
+  transform: translate(-50%, -50%);
   text-align: center;
-  border-top: 1px solid #ececec;
-  border-bottom: 1px solid #ececec;
-  box-shadow: 0 5px 10px 10px #ececec;
+  background-color: #ffffff;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
 .modal__title {
   width: 148px;
   margin: 0 auto;
-  margin-bottom: 23px;
+  margin-bottom: 12px;
   font-size: 25px;
   line-height: 30px;
   text-transform: uppercase;
@@ -20,11 +46,12 @@
 
 .modal__form-group {
   padding: 0;
+  margin: 0 auto;
   border: none;
 }
 
 .modal__form-legend {
-  margin-bottom: 28px;
+  margin-bottom: 21px;
   font-size: 15px;
   line-height: 30px;
   font-weight: normal;
@@ -36,19 +63,24 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 31px;
 }
 
 .modal__label {
   display: block;
-  width: 76px;
-  padding: 20px 0;
+  width: 82px;
+  padding: 15px 30px;
+  margin-bottom: 31px;
   color: #444444;
   border: 2px solid #ececec;
+  cursor: pointer;
 
-  &--active {
-    border: 2px solid #63d1bb;
+  &:hover {
+    border-color: #c7c7c7;
   }
+}
+
+.modal__input:checked + .modal__label {
+  border-color: #63d1bb;
 }
 
 .modal__submit {
@@ -59,22 +91,19 @@
 }
 
 @media (min-width: $tablet-width) {
-  .modal {
+  .modal__form {
     width: 566px;
-    padding: 0 108px;
-    margin-bottom: 10px;
+    padding: 46px 108px;
   }
 
   .modal__title {
     width: 360px;
-    margin-top: 50px;
     font-size: 30px;
     line-height: 57px;
   }
 
   .modal__form-group {
     width: 350px;
-    margin: 0;
     padding: 0;
   }
 
@@ -84,7 +113,7 @@
 
   .modal__label {
     width: 112px;
-    padding: 18px;
+    padding: 18px 50px;
   }
 
   .modal__submit {
