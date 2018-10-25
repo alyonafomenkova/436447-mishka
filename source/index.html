@@ -176,13 +176,14 @@
           </div>
         </div>
       </div>
-      <div class="contacts__map">
+      <div class="contacts__map contacts__map-nojs">
         <h3 class="visually-hidden">Наш магазин на карте</h3>
-        <picture>
+        <picture class="contacts__map-fallback">
           <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-          <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Mishka на карте">
+          <img class="contacts__map-fallback-img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Mishka на карте">
         </picture>
+        <div class="contacts__map-yandex" id="map"></div>
       </div>
       <a class="contacts__write button" href="#">Напишите нам</a>
     </section>
@@ -284,6 +285,8 @@
   <script src="js/svg4everybody.js"></script>
   <script>svg4everybody();</script>
   <script src="js/picturefill.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="js/map.js"></script>
 </body>
 
 </html>
