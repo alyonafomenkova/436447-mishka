@@ -7,6 +7,7 @@
   margin-bottom: 15px;
   font-size: 18px;
   line-height: 30px;
+  word-wrap: break-word;
 }
 
 .contacts__details {
@@ -25,9 +26,15 @@
   margin-top: -1px;
 }
 
+.contacts__details-field {
+  width: 50px;
+  word-wrap: break-word;
+}
+
 .contacts__details-value {
   width: 185px;
   margin-left: auto;
+  word-wrap: break-word;
 }
 
 .contacts__details-value--link {
@@ -41,9 +48,9 @@
 
 .contacts__map {
   position: relative;
-  //width: 100%;
-  //min-height: 457px;
-  //padding: 0;
+  width: 100%;
+  min-height: 457px;
+  padding: 0;
   margin-bottom: 39px;
 }
 
