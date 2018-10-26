@@ -1,6 +1,15 @@
 .catalog__item {
   margin-bottom: 30px;
   border: 1px solid #ececec;
+
+  &:hover .catalog-item__wrap,
+  &:focus .catalog-item__wrap{
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active .catalog-item__wrap{
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .catalog-item__image {
@@ -22,6 +31,15 @@
 
   &-link {
     word-wrap: break-word;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -40,7 +58,6 @@
   justify-content: space-around;
   position: relative;
   padding-top: 5px;
-  margin-bottom: 13px;
   border-top: 1px solid #ececec;
 }
 
@@ -56,6 +73,16 @@
   position: absolute;
   top: 22px;
   right: 0;
+  fill: #d3d2d2;
+
+  &:hover,
+  &:focus {
+    fill: #63d1bb;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
