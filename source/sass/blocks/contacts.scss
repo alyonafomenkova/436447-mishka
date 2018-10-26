@@ -38,8 +38,18 @@
 }
 
 .contacts__details-value--link {
+  position: relative;
   padding-top: 14px;
-  border-bottom: 1px solid #62d1ba;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #62d1ba;
+  }
 
   &:hover,
   &:focus {
@@ -142,6 +152,10 @@
 
     &--link {
       padding-top: 18px;
+
+      &::after {
+        bottom: 75px;
+      }
     }
   }
 
@@ -191,6 +205,10 @@
 
   .contacts__details-field {
     width: 75px;
+  }
+
+  .contacts__details-value--link::after {
+    bottom: 15px;
   }
 
   .contacts__map {
