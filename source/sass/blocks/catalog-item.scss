@@ -103,6 +103,7 @@
 
   .catalog-item__wrap {
     width: 50%;
+    border-top: none;
   }
 
   .catalog-item__title {
@@ -123,7 +124,7 @@
   }
 
   .catalog-item__purchase-wrapper {
-    margin-bottom: 8px;
+   padding-bottom: 0;
   }
 
   .catalog-item__price {

@@ -1,7 +1,6 @@
 .video-post {
   width: 260px;
-  padding-bottom: 33px;
-  margin-bottom: 60px;
+  margin-bottom: 54px;
   border: 1px solid #ececec;
 }
 
@@ -9,6 +8,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  padding-bottom: 33px;
 
   &:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
@@ -102,12 +102,13 @@
 
 @media (min-width: $tablet-width) {
   .video-post {
-    margin: 0 50px 62px 50px;
-    padding-bottom: 47px;
+    width: 668px;
+    margin-bottom: 61px;
   }
 
   .video-post__wrapper-layout {
     flex-direction: column;
+    padding-bottom: 45px;
   }
 
   .video-post__preview-wrapper {
@@ -125,8 +126,8 @@
   }
 
   .video-post__header {
-    margin-top: 315px;
-    margin-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 1px;
 
     &::before {
       top: 23px;
@@ -145,7 +146,8 @@
 
   .video-post__text {
     width: 100%;
-    margin-bottom: 38px;
+    margin-bottom: 37px;
+    padding-left: 10px;
     font-size: 15px;
     line-height: 30px;
   }
