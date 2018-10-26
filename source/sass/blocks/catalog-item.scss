@@ -1,5 +1,5 @@
 .catalog__item {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   border: 1px solid #ececec;
 
   &:hover .catalog-item__wrap,
@@ -19,11 +19,13 @@
 }
 
 .catalog-item__wrap {
+  margin-top: -5px;
   padding: 0 28px;
+  padding-top: 14px;
+  border-top: 2px solid black;
 }
 
 .catalog-item__title {
-  margin-top: 25px;
   margin-bottom: 0;
   text-align: left;
   font-size: 17px;
@@ -58,6 +60,7 @@
   justify-content: space-around;
   position: relative;
   padding-top: 5px;
+  padding-bottom: 12px;
   border-top: 1px solid #ececec;
 }
 
