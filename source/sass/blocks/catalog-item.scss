@@ -124,7 +124,7 @@
   }
 
   .catalog-item__purchase-wrapper {
-   padding-bottom: 0;
+   padding-bottom: 0px;
   }
 
   .catalog-item__price {
@@ -146,6 +146,8 @@
 
   .catalog-item__wrap {
     width: 100%;
+    margin-top: -13px;
+    padding-bottom: 7px;
   }
 
   .catalog-item__description {

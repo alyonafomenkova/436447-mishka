@@ -159,17 +159,18 @@
 
 @media (min-width: $desktop-width) {
   .video-post {
-    padding-bottom: 60px;
+    width: 1050px;
     margin-bottom: 105px;
   }
 
   .video-post__wrapper-layout {
     align-items: flex-end;
+    padding-bottom: 60px;
   }
 
   .video-post__header {
     max-width: 350px;
-    margin-top: -375px;
+    margin-top: -377px;
 
     &::before {
       left: 4px;
@@ -203,7 +204,7 @@
 
   .video-post__text {
     padding-left: 33px;
-    margin-bottom: 48px;
+    margin-bottom: 47px;
   }
 
   .video-post__btn-order {
