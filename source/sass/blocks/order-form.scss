@@ -273,6 +273,10 @@
   .order-form__group-layout-wrap {
     display: flex;
     padding: 0 50px;
+
+    &--checkbox {
+      margin-top: 63px;
+    }
   }
 
   .order-form__description {
@@ -284,20 +288,25 @@
 
   .order-form__group {
     margin-top: 70px;
-    margin-bottom: 0;
 
     &--checkbox {
-      padding-bottom: 55px;
+      padding-bottom: 8px;
       background-color: #f1f1f1;
     }
 
+    &--name {
+      margin-top: 50px;
+    }
+
     &--tel {
-      margin-top: 10px;
+      margin-top: 50px;
+      margin-bottom: 0;
       background-color: #f1f1f1;
     }
 
     &--email {
       margin-top: 0;
+      margin-bottom: 0;
       padding-bottom: 50px;
       background-color: #f1f1f1;
     }
@@ -310,72 +319,61 @@
 
   .order-form__legend {
     width: 167px;
-    margin-top: 62px;
     font-size: 17px;
-
-    &--type {
-      margin-top: 0;
-    }
 
     &::after {
       display: none;
     }
 
     &--name {
-      margin-top: 0;
+      margin-top: 20px;
+    }
+
+    &--tel {
+      margin-top: 65px;
     }
 
     &--email {
       margin-top: 40px;
+    }
+
+    &--comment {
+      margin-top: 65px;
+    }
+  }
+
+  .order-form__fields-list {
+    width: 500px;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+
+  .order-form__fields-item {
+    padding-left: 80px;
+    margin-bottom: 56px;
+
+    &--color {
+      width: 239px;
+      padding-right: 0;
     }
   }
 
   .order-form__label {
     margin-top: 0;
     padding: 0;
-    padding-left: 112px;
     font-size: 19px;
-
-    &--toy {
-      margin-top: 58px;
-    }
-
-    &--color {
-      width: 262px;
-      margin-top: 65px;
-      padding-left: 116px;
-    }
 
     &--name,
     &--surname,
     &--patronimic {
       width: 123px;
       padding-left: 0;
-      margin-left: 98px;
+      margin-left: 34px;
     }
 
     &--name {
       width: 70px;
     }
-  }
-
-  .order-form__label--color:nth-of-type(2) {
-    padding-left: 115px;
-  }
-
-  .order-form__label--color:nth-of-type(3),
-  .order-form__label--color:nth-of-type(5) {
-    margin-top: 50px;
-  }
-
-  .order-form__label--color:nth-of-type(4),
-  .order-form__label--color:nth-of-type(6) {
-    margin-top: 50px;
-    padding-left: 115px;
-  }
-
-  .order-form__fields-list--color {
-    width: 100%;
   }
 
   .order-form__fields-list--name {
@@ -385,45 +383,52 @@
   }
 
   .order-form__fields-list input[type="radio"] + label::before {
-    top: -13px;
-    left: 29px;
+    top: -10px;
+    left: -79px;
     width: 51px;
     height: 51px;
   }
 
   .order-form__fields-list input[type="radio"]:checked + label::after {
-    top: 3px;
-    left: 45px;
+    top: 6px;
+    left: -65px;
     width: 20px;
     height: 20px;
   }
 
   .order-form__fields-list input[type="checkbox"] + label::before {
-    bottom: -18px;
-    left: 34px;
+    bottom: -15px;
+    left: -80px;
     width: 54px;
     height: 52px;
   }
 
   .order-form__fields-list input[type="checkbox"]:checked + label::after {
-    top: -8px;
-    left: 49px;
+    top: -6px;
+    left: -63px;
     width: 20px;
     height: 30px;
   }
 
   .order-form__group--name .order-form__input {
-    width: 100%;
-    margin-left: 30px;
-    padding-top: 0;
-    padding-left: 14px;
-    padding-bottom: 14px;
+    width: 375px;
+    margin-left: 20px;
+    padding-left: 18px;
     font-size: 19px;
     line-height: 20px;
 
     &--name {
-      padding-left: 13px;
-      margin-left: 30px;
+      width: 428px;
+      margin-left: 18px;
+      padding-left: 17px;
+    }
+  }
+
+  .order-form__field-wrapper {
+    width: 100%;
+
+    &--name {
+      margin-bottom: 26px;
     }
   }
 
