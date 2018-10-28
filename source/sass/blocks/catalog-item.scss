@@ -3,11 +3,11 @@
   border: 1px solid #ececec;
 
   &:hover .catalog-item__wrap,
-  &:focus .catalog-item__wrap{
+  &:focus .catalog-item__wrap {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
 
-  &:active .catalog-item__wrap{
+  &:active .catalog-item__wrap {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }
@@ -124,7 +124,7 @@
   }
 
   .catalog-item__purchase-wrapper {
-   padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .catalog-item__price {

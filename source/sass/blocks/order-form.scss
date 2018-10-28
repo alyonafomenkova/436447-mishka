@@ -124,7 +124,7 @@
 }
 
 .order-form__fields-list input[type="radio"]:hover + label::before,
-.order-form__fields-list input[type="radio"]:focus + label::before{
+.order-form__fields-list input[type="radio"]:focus + label::before {
   border-color: #62d1ba;
 }
 
@@ -155,7 +155,7 @@
 }
 
 .order-form__fields-list input[type="checkbox"]:hover + label::before,
-.order-form__fields-list input[type="checkbox"]:focus + label::before{
+.order-form__fields-list input[type="checkbox"]:focus + label::before {
   border-color: #62d1ba;
 }
 
@@ -186,7 +186,7 @@
 
 .order-form__icon {
   position: absolute;
-   opacity: 0.2;
+  opacity: 0.2;
 
   &--phone {
     width: 25px;
