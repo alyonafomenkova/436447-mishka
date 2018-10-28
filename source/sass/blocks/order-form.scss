@@ -491,7 +491,12 @@
     margin-bottom: 68px;
 
     &--name {
-      margin-bottom: 10px;
+      margin-bottom: 50px;
+    }
+
+    &--checkbox {
+      padding-bottom: 10px;
+      margin-bottom: 50px;
     }
 
     &--tel,
@@ -500,7 +505,30 @@
     }
 
     &--comment {
-      margin-bottom: 51px;
+      margin-bottom: 49px;
+    }
+  }
+
+  .order-form__fields-list {
+    width: 740px;
+  }
+
+  .order-form__fields-item {
+    padding-left: 90px;
+
+    &--color {
+      padding-left: 0;
+      margin-left: 0;
+
+      &:nth-child(2),
+      &:nth-child(5) {
+        padding-left: 11px;
+      }
+
+      &:nth-child(3),
+      &:nth-child(6) {
+        padding-left: 25px;
+      }
     }
   }
 
@@ -521,49 +549,17 @@
   }
 
   .order-form__label {
-    padding-left: 90px;
-
-    &--toy {
-      margin-top: 60px;
-    }
-
     &--color {
-      width: 200px;
-      padding-left: 103px;
+      width: 215px;
+      padding-left: 89px;
       margin-top: 0;
     }
 
     &--name,
     &--surname,
     &--patronimic {
-      padding-left: 12px;
+      margin-left: 26px;
     }
-  }
-
-  .order-form__label--color:nth-of-type(2) {
-    margin-left: 60px;
-    padding-left: 107px;
-  }
-
-  .order-form__label--color:nth-of-type(3) {
-    width: 220px;
-    margin-top: 65px;
-    margin-left: 65px;
-    padding-left: 105px;
-  }
-
-  .order-form__label--color:nth-of-type(4) {
-    margin: 0;
-    padding-left: 103px;
-
-  }
-
-  .order-form__label--color:nth-of-type(5) {
-    margin-left: 0;
-  }
-
-  .order-form__label--color:nth-of-type(6) {
-    margin-left: 70px;
   }
 
   .order-form__fields-list--type {
@@ -575,28 +571,28 @@
   }
 
   .order-form__fields-list input[type="radio"] + label::before {
-    top: -13px;
-    left: 9px;
+    top: -10px;
+    left: -82px;
   }
 
   .order-form__fields-list input[type="radio"]:checked + label::after {
-    top: 3px;
-    left: 25px;
+    top: 6px;
+    left: -66px;
   }
 
   .order-form__fields-list input[type="checkbox"] + label::before {
     bottom: -18px;
-    left: 24px;
+    left: 7px;
   }
 
   .order-form__fields-list input[type="checkbox"]:checked + label::after {
-    top: -9px;
-    left: 40px;
+    top: -5px;
+    left: 25px;
   }
 
   .order-form__group--name .order-form__input {
     width: 573px;
-    margin-left: 26px;
+    margin-left: 20px;
     padding-left: 16px;
 
     &--name {
@@ -616,7 +612,7 @@
   }
 
   .order-form__icon {
-    right: 180px;
+    right: 230px;
   }
 
   .order-form__comment {
