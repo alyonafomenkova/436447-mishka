@@ -15,20 +15,23 @@
   margin-bottom: 41px;
   border: none;
 
+  &--checkbox {
+    margin-bottom: 39px;
+  }
+
   &--name {
-    margin-top: -9px;
+    margin-bottom: 29px;
   }
 
   &--tel {
-    margin-top: -11px;
+    margin-bottom: 29px;
   }
 
   &--email {
-    margin-top: -12px;
+    margin-bottom: 30px;
   }
 
   &--comment {
-    margin-top: -10px;
     margin-bottom: 13px;
   }
 }
@@ -61,7 +64,7 @@
   }
 
   &--name {
-    margin-bottom: 20px;
+    margin-bottom: 26px;
   }
 }
 
@@ -165,24 +168,15 @@
   position: relative;
   line-height: 18px;
   word-wrap: break-word;
+}
 
+.order-form__field-wrapper {
   &--name {
-    display: block;
-    padding: 0;
-    margin-top: 6px;
+    margin-bottom: 21px;
   }
 
   &--surname {
-    display: block;
-    padding: 0;
-    margin-top: 21px;
-    margin-bottom: 7px;
-  }
-
-  &--patronimic {
-    display: block;
-    padding: 0;
-    margin-top: 21px;
+    margin-bottom: 21px;
   }
 }
 
@@ -215,7 +209,7 @@
   border-bottom: 2px solid #000000;
 
   &--surname {
-    padding-top: 10px;
+    padding-top: 14px;
   }
 
   &--tel {
