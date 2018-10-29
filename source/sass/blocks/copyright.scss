@@ -9,6 +9,15 @@
   align-items: center;
   margin-top: 20px;
   padding-bottom: 23px;
+
+  &:hover .copyright__icon {
+    fill: #46c1ae;
+    fill: red; // для наглядности. Потом удалить.
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__title {
@@ -16,16 +25,16 @@
   margin-left: 37px;
   word-wrap: break-word;
   font-size: 19px;
-
+/*
   &:active {
     opacity: 0.3;
-  }
+  }*/
 }
 
 .copyright__icon {
   margin-left: 22px;
   fill: #63d1bb;
-
+/*
   &:hover {
     fill: #46c1ae;
   }
@@ -33,6 +42,7 @@
   &:active {
     opacity: 0.3;
   }
+  */
 }
 
 @media (min-width: $tablet-width) {
