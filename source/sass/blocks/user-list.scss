@@ -64,21 +64,21 @@
     order: 1;
     margin-left: auto;
     padding-top: 2px;
+  }
 
-    &__link {
-      width: auto;
-      padding-top: 28px;
-    }
+  .user-list__link {
+    width: auto;
+    padding-top: 28px;
+  }
 
-    &__search-icon {
-      top: 33px;
-      left: 35px;
-    }
+  .user-list__search-icon {
+    top: 33px;
+    left: 35px;
+  }
 
-    &__basket-icon {
-      top: 33px;
-      left: -52px;
-    }
+  .user-list__basket-icon {
+    top: 33px;
+    left: -52px;
   }
 
   .user-list__item {
@@ -99,11 +99,11 @@
   .user-list {
     width: 50%;
     margin: 0;
+  }
 
-    &__basket-icon {
-      top: 33px;
-      left: -55px;
-    }
+  .user-list__basket-icon {
+    top: 33px;
+    left: -55px;
   }
 
   .user-list__item--search {

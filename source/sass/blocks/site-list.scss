@@ -26,10 +26,10 @@
     width: 322px;
     flex-wrap: wrap;
     justify-content: flex-start;
+  }
 
-    &__link {
-      width: auto;
-    }
+  .site-list__link {
+    width: auto;
   }
 
   .site-list__item {
