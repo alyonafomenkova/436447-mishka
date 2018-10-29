@@ -38,6 +38,7 @@
     "node": "8.12"
   },
   "dependencies": {
-    "node.normalize.scss": "^3.0.3"
+    "node.normalize.scss": "^3.0.3",
+    "picturefill": "^3.0.3"
   }
 }

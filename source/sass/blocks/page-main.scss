@@ -1,15 +1,12 @@
-.page-main {
-  width: 320px;
-  margin: 0 auto;
-}
-
 .page-main__title-wrapper {
   background-color: #f1f1f1;
 }
 
 .page-main__title {
   margin: 0;
-  padding: 67px 30px 123px 30px;
+  padding: 68px 30px 123px 29px;
+  word-wrap: break-word;
+
   font-size: 27px;
   line-height: 30px;
   color: #010000;
@@ -29,7 +26,6 @@
 
 @media (min-width: $tablet-width) {
   .page-main {
-    width: $tablet-width;
     margin-top: -63px;
     border-top: 1px solid #ececec;
   }
@@ -67,7 +63,6 @@
 
 @media (min-width: $desktop-width) {
   .page-main {
-    width: $desktop-width;
     margin-top: -43px;
   }
 

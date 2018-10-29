@@ -36,4 +36,13 @@
       font-weight: normal;
     }
   }
+
+  .special-list__link:hover,
+  .special-list__link:focus {
+    opacity: 0.6;
+  }
+
+  .special-list__link:active {
+    opacity: 0.3;
+  }
 }

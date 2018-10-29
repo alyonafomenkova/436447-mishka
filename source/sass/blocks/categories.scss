@@ -21,47 +21,85 @@
 }
 
 .categories__item {
-  position: relative;
-  background-color: #63d1bb;
+  padding: 28px 17px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 23px;
-    right: 36px;
-    width: 40px;
-    height: 62px;
-    background-image: url("../img/icon-interior.svg");
-    opacity: 0.5;
+  &--interior {
+    background-color: #63d1bb;
   }
 
-  &--darker::after {
-    content: "";
-    position: absolute;
-    top: 21px;
-    right: 27px;
-    width: 60px;
-    height: 60px;
-    background-image: url("../img/icon-toy.svg");
-    opacity: 0.5;
-  }
-
-  &--darker {
+  &--toys {
+    padding: 28px 6px;
     background-color: #56c3b2;
   }
+
+  &:hover,
+  &:focus {
+    transform: translateY(-5px);
+  }
+}
+
+.categories__item--interior:active span {
+  color: #8be2d0;
+}
+
+.categories__item--toys:active span {
+  color: #7ed4c6;
+}
+
+.categories__item:hover .categories__link,
+.categories__item:focus .categories__link {
+  bottom: 5px;
 }
 
 .categories__link {
   display: block;
+  position: relative;
   width: 130px;
-  padding: 26px 30px 30px 30px;
+  word-wrap: break-word;
   color: #ffffff;
+}
+
+.categories__interior-icon,
+.categories__toys-icon {
+  position: absolute;
+  top: -5px;
+  left: 226px;
+  fill: #149080;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.categories__interior-icon {
+  width: 40px;
+  height: 62px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.categories__toys-icon {
+  width: 60px;
+  height: 60px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .categories {
     position: relative;
-    padding: 0 50px;
     padding-top: 25px;
     font-size: 20px;
     line-height: 30px;
@@ -90,26 +128,33 @@
     display: flex;
     width: 100%;
     margin-bottom: 0;
+    padding: 0 50px;
   }
 
   .categories__item {
     flex-grow: 1;
+    width: 334px;
+    padding-left: 6px;
     margin-top: 214px;
 
-    &::after {
-      top: 29px;
-    }
-
-    &--darker::after {
-      top: 31px;
-      right: 32px;
+    &--toys {
+      padding-left: 0;
     }
   }
 
   .categories__link {
     width: 167px;
-    padding: 28px 30px 30px 30px;
     color: #ffffff;
+  }
+
+  .categories__interior-icon,
+  .categories__toys-icon {
+    top: 0;
+    left: 250px;
+  }
+
+  .categories__toys-icon {
+    left: 240px;
   }
 }
 
@@ -118,7 +163,7 @@
     background-image: url("../../img/hero-desktop@1x.jpg");
 
     &::after {
-      bottom: -17px;
+      bottom: -14px;
       height: 34px;
       background-position-x: center;
       background-size: 1250px;
@@ -127,5 +172,18 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../../img/hero-desktop@2x.jpg");
     }
+  }
+
+  .categories__item {
+    width: 525px;
+    padding-bottom: 30px;
+  }
+
+  .categories__interior-icon {
+    left: 443px;
+  }
+
+  .categories__toys-icon {
+    left: 429px;
   }
 }
