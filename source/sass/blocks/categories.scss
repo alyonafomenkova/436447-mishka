@@ -126,6 +126,7 @@
 
   .categories__list {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     margin-bottom: 0;
     padding: 0 50px;
