@@ -127,6 +127,14 @@
   border-color: #62d1ba;
 }
 
+.order-form__input--radio:focus + label::before {
+  outline: 2px solid #62d1ba;
+}
+
+.order-form__input--radio:checked + label::after {
+  opacity: 1;
+}
+
 .order-form__label--radio:active::before {
   border-color: rgba(68, 68, 68, 0.3);
 }
@@ -155,6 +163,10 @@
 
 .order-form__label--color:hover::before {
   border-color: #62d1ba;
+}
+
+.order-form__input--checkbox:focus + label::before {
+  outline: 2px solid #62d1ba;
 }
 
 .order-form__label--color:active::before {
