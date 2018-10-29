@@ -120,6 +120,7 @@
   height: 16px;
   border-radius: 50%;
   background-color: #63d1bb;
+  opacity: 1;
 }
 
 .order-form__label--radio:hover::before {
@@ -128,10 +129,6 @@
 
 .order-form__input--radio:focus + label::before {
   outline: 2px solid #62d1ba;
-}
-
-.order-form__input--radio:checked + label::after {
-  opacity: 1;
 }
 
 .order-form__label--radio:active::before {
@@ -431,13 +428,6 @@
     padding-left: 19px;
     font-size: 19px;
     line-height: 20px;
-
-    &--name {
-
-      //width: 428px;
-      //margin-left: 18px;
-      //padding-left: 17px;
-    }
   }
 
   .order-form__field-wrapper {
