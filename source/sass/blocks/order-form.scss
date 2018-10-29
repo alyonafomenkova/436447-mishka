@@ -122,13 +122,21 @@
   border-radius: 50%;
   background-color: #63d1bb;
 }
-
+/*
 .order-form__fields-list input[type="radio"]:hover + label::before,
 .order-form__fields-list input[type="radio"]:focus + label::before {
   border-color: #62d1ba;
 }
 
 .order-form__fields-list input[type="radio"]:active + label::before {
+  border-color: rgba(68, 68, 68, 0.3);
+}*/
+
+.order-form__label--radio:hover::before {
+  border-color: #62d1ba;
+}
+
+.order-form__label--radio:active::before {
   border-color: rgba(68, 68, 68, 0.3);
 }
 
