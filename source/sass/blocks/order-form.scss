@@ -356,6 +356,10 @@
     width: 500px;
     justify-content: space-between;
     margin-top: 0;
+
+    &--color {
+      flex-direction: row;
+    }
   }
 
   .order-form__fields-item {
