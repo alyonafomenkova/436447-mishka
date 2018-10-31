@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -64,7 +64,7 @@
     <section class="catalog container">
       <ul class="catalog__list">
         <li class="catalog__item catalog-item">
-          <a href="# ">
+          <a href="catalog-item.html">
             <picture>
               <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
@@ -77,13 +77,13 @@
           <div class="catalog-item__wrap">
             <div class="catalog-item__info-top">
               <h2 class="catalog-item__title">
-                <a class="catalog-item__title-link">Зайчик-попрыгайчик</a>
+                <a class="catalog-item__title-link" href="catalog-item.html">Зайчик-попрыгайчик</a>
               </h2>
               <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
             </div>
             <div class="catalog-item__purchase-wrapper">
               <p class="catalog-item__price">1 200 руб.</p>
-              <a class="catalog-item__order js-order" href="#">
+              <a class="catalog-item__order js-order" href="order.html">
                 <span class="visually-hidden">Добавить в корзину</span>
                 <svg class="catalog-item__basket-icon" width="21" height="18">
                   <use xlink:href="img/sprite.svg#basket-icon"></use>
@@ -93,7 +93,7 @@
           </div>
         </li>
         <li class="catalog__item catalog-item">
-          <a href="#">
+          <a href="catalog-item.html">
             <picture>
               <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
@@ -106,13 +106,13 @@
           <div class="catalog-item__wrap">
             <div class="catalog-item__info-top">
               <h2 class="catalog-item__title">
-                <a class="catalog-item__title-link">Корзинка для белья</a>
+                <a class="catalog-item__title-link" href="catalog-item.html">Корзинка для белья</a>
               </h2>
               <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
             </div>
             <div class="catalog-item__purchase-wrapper">
               <p class="catalog-item__price">690 руб.</p>
-              <a class="catalog-item__order js-order" href="#">
+              <a class="catalog-item__order js-order" href="order.html">
                 <span class="visually-hidden">Добавить в корзину</span>
                 <svg class="catalog-item__basket-icon" width="21" height="18">
                   <use xlink:href="img/sprite.svg#basket-icon"></use>
@@ -122,7 +122,7 @@
           </div>
         </li>
         <li class="catalog__item catalog-item">
-          <a href="# ">
+          <a href="catalog-item.html">
             <picture>
               <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp, img/photo-toys-tablet@2x.webp 2x">
@@ -135,13 +135,13 @@
           <div class="catalog-item__wrap">
             <div class="catalog-item__info-top catalog-item__info-top--toy">
               <h2 class="catalog-item__title catalog-item__title--toy">
-                <a class="catalog-item__title-link">Большая корзинка для игрушек</a>
+                <a class="catalog-item__title-link" href="catalog-item.html">Большая корзинка для игрушек</a>
               </h2>
               <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
             </div>
             <div class="catalog-item__purchase-wrapper catalog-item__purchase-wrapper--toy">
               <p class="catalog-item__price">1 500 руб.</p>
-              <a class="catalog-item__order js-order" href="#">
+              <a class="catalog-item__order js-order" href="order.html">
                 <span class="visually-hidden">Добавить в корзину</span>
                 <svg class="catalog-item__basket-icon" width="21" height="18">
                   <use xlink:href="img/sprite.svg#basket-icon"></use>
@@ -219,7 +219,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <b class="copyright__title">Разработано</b>
+          <span class="copyright__title">Разработано</span>
           <span class="visually-hidden">HTML Academy</span>
           <svg class="copyright__icon" width="26" height="34">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
@@ -236,7 +236,7 @@
       <h2 class="modal__title">Добавить в корзину</h2>
       <fieldset class="modal__form-group">
         <legend class="modal__form-legend">Выберите размер</legend>
-        <div class="modal__form__field-wrapper">
+        <div class="modal__form-field-wrapper">
           <input class="modal__input visually-hidden" id="size-S" type="radio" name="size" value="S" checked>
           <label class="modal__label" for="size-S">S </label>
           <input class="modal__input visually-hidden" id="size-M" type="radio" name="size" value="M">
@@ -248,11 +248,9 @@
       <button class="modal__submit button" type="submit">Добавить</button>
     </form>
   </section>
-  <script src="js/menu-toggle.js"></script>
-  <script src="js/popup.js"></script>
-  <script src="js/svg4everybody.js"></script>
+  <script src="js/main.min.js"></script>
   <script>svg4everybody();</script>
-  <script src="js/picturefill.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 </body>
 
 </html>

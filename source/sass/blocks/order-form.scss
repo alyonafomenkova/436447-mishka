@@ -16,11 +16,11 @@
   border: none;
 
   &--checkbox {
-    margin-bottom: 39px;
+    margin-bottom: 37px;
   }
 
   &--name {
-    margin-bottom: 29px;
+    margin-bottom: 30px;
   }
 
   &--tel {
@@ -28,7 +28,7 @@
   }
 
   &--email {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
 
   &--comment {
@@ -73,6 +73,7 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   text-align: center;
   position: relative;
   margin-top: 30px;
@@ -83,70 +84,68 @@
 }
 
 .order-form__fields-item {
-  padding-left: 61px;
-  padding-right: 72px;
-  margin-bottom: 21px;
+  margin-bottom: 26px;
   text-align: left;
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  &--type:nth-child(2) {
-    padding-right: 40px;
-  }
-
   &--color {
-    margin-bottom: 41px;
+    margin-bottom: 44px;
   }
 }
 
-.order-form__fields-list input[type="radio"] + label::before {
+.order-form__input--radio + label::before {
   content: "";
   position: absolute;
-  top: -4px;
-  left: -61px;
+  top: -6px;
+  left: 0;
   width: 38px;
   height: 38px;
   border-radius: 50%;
   border: 2px solid #444444;
 }
 
-.order-form__fields-list input[type="radio"]:checked + label::after {
+.order-form__input--radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 7px;
-  left: -50px;
+  top: 6px;
+  left: 11px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
   background-color: #63d1bb;
+  opacity: 1;
 }
 
-.order-form__fields-list input[type="radio"]:hover + label::before,
-.order-form__fields-list input[type="radio"]:focus + label::before {
+.order-form__label--radio:hover::before {
   border-color: #62d1ba;
 }
 
-.order-form__fields-list input[type="radio"]:active + label::before {
+.order-form__input--radio:focus + label::before {
+  outline: 2px solid #62d1ba;
+}
+
+.order-form__label--radio:active::before {
   border-color: rgba(68, 68, 68, 0.3);
 }
 
-.order-form__fields-list input[type="checkbox"] + label::before {
+.order-form__input--checkbox + label::before {
   content: "";
   position: absolute;
-  bottom: -7px;
-  left: -60px;
+  bottom: -9px;
+  left: 0;
   width: 38px;
   height: 38px;
   border: 2px solid #444444;
 }
 
-.order-form__fields-list input[type="checkbox"]:checked + label::after {
+.order-form__input--checkbox:checked + label::after {
   content: "";
   position: absolute;
   top: -2px;
-  left: -46px;
+  left: 15px;
   width: 10px;
   height: 20px;
   transform: rotate(45deg);
@@ -154,25 +153,36 @@
   border-right: 1px solid #000000;
 }
 
-.order-form__fields-list input[type="checkbox"]:hover + label::before,
-.order-form__fields-list input[type="checkbox"]:focus + label::before {
+.order-form__label--color:hover::before {
   border-color: #62d1ba;
 }
 
-.order-form__fields-list input[type="checkbox"]:active + label::before {
+.order-form__input--checkbox:focus + label::before {
+  outline: 2px solid #62d1ba;
+}
+
+.order-form__label--color:active::before {
   border-color: rgba(68, 68, 68, 0.3);
 }
 
 /*--------------- labels ---------------*/
 .order-form__label {
+  display: block;
+  padding-left: 61px;
   position: relative;
   line-height: 18px;
   word-wrap: break-word;
+
+  &--name,
+  &--surname,
+  &--patronimic {
+    padding-left: 0;
+  }
 }
 
 .order-form__field-wrapper {
   &--name {
-    margin-bottom: 21px;
+    margin-bottom: 24px;
   }
 
   &--surname {
@@ -346,11 +356,15 @@
     width: 500px;
     justify-content: space-between;
     margin-top: 0;
+
+    &--color {
+      flex-direction: row;
+    }
   }
 
   .order-form__fields-item {
     padding-left: 80px;
-    margin-bottom: 56px;
+    margin-bottom: 59px;
 
     &--color {
       width: 239px;
@@ -359,16 +373,20 @@
   }
 
   .order-form__label {
+    width: 260px;
     margin-top: 0;
     padding: 0;
     font-size: 19px;
+
+    &--color {
+      width: 135px;
+    }
 
     &--name,
     &--surname,
     &--patronimic {
       width: 123px;
       padding-left: 0;
-      margin-left: 34px;
     }
 
     &--name {
@@ -382,53 +400,54 @@
     margin-bottom: 40px;
   }
 
-  .order-form__fields-list input[type="radio"] + label::before {
-    top: -10px;
+  .order-form__input--radio + label::before {
+    top: -14px;
     left: -79px;
     width: 51px;
     height: 51px;
   }
 
-  .order-form__fields-list input[type="radio"]:checked + label::after {
+  .order-form__input--radio:checked + label::after {
     top: 6px;
     left: -65px;
     width: 20px;
     height: 20px;
   }
 
-  .order-form__fields-list input[type="checkbox"] + label::before {
-    bottom: -15px;
+  .order-form__input--checkbox + label::before {
+    bottom: -18px;
     left: -80px;
     width: 54px;
     height: 52px;
   }
 
-  .order-form__fields-list input[type="checkbox"]:checked + label::after {
-    top: -6px;
+  .order-form__input--checkbox:checked + label::after {
+    top: -8px;
     left: -63px;
     width: 20px;
     height: 30px;
   }
 
   .order-form__group--name .order-form__input {
-    width: 375px;
-    margin-left: 20px;
-    padding-left: 18px;
+    flex-grow: 1;
+    padding-left: 19px;
     font-size: 19px;
     line-height: 20px;
-
-    &--name {
-      width: 428px;
-      margin-left: 18px;
-      padding-left: 17px;
-    }
   }
 
   .order-form__field-wrapper {
-    width: 100%;
+    width: 500px;
+
+    &--name,
+    &--surname,
+    &--patronymic {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
 
     &--name {
-      margin-bottom: 26px;
+      margin-bottom: 23px;
     }
   }
 
@@ -555,12 +574,6 @@
       padding-left: 89px;
       margin-top: 0;
     }
-
-    &--name,
-    &--surname,
-    &--patronimic {
-      margin-left: 26px;
-    }
   }
 
   .order-form__fields-list--type {
@@ -571,34 +584,37 @@
     margin-left: 60px;
   }
 
-  .order-form__fields-list input[type="radio"] + label::before {
+  .order-form__input--radio + label::before {
     top: -10px;
     left: -82px;
   }
 
-  .order-form__fields-list input[type="radio"]:checked + label::after {
+  .order-form__input--radio:checked + label::after {
     top: 6px;
     left: -66px;
   }
 
-  .order-form__fields-list input[type="checkbox"] + label::before {
+  .order-form__input--checkbox + label::before {
     bottom: -18px;
     left: 7px;
   }
 
-  .order-form__fields-list input[type="checkbox"]:checked + label::after {
+  .order-form__input--checkbox:checked + label::after {
     top: -5px;
     left: 25px;
   }
 
-  .order-form__group--name .order-form__input {
-    width: 573px;
-    margin-left: 20px;
-    padding-left: 16px;
+  .order-form__field-wrapper {
+    width: 700px;
+    margin-left: 5px;
 
     &--name {
-      width: 625px;
+      margin-left: 7px;
     }
+  }
+
+  .order-form__group--name .order-form__input {
+    padding-left: 16px;
   }
 
   .order-form__input--tel,
@@ -623,10 +639,11 @@
 
   .order-form__order-btn {
     margin-left: 225px;
-    margin-bottom: 49px;
+    margin-bottom: 50px;
   }
 
   .order-form__required-fields {
     margin-right: 175px;
+    padding-top: 11px;
   }
 }
