@@ -20,7 +20,8 @@ var concat = require("gulp-concat");
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
+    "source/img/*",
+    "!source/img/sprite",
     "source/js/**",
     "source/*.html"
   ], {
@@ -70,19 +71,19 @@ gulp.task("webp", function () {
 
 gulp.task("sprite", function () {
   return gulp.src([
-    "source/img/icon-search.svg",
-    "source/img/icon-cart.svg",
-    "source/img/icon-interior.svg",
-    "source/img/icon-toy.svg",
-    "source/img/icon-left-arrow.svg",
-    "source/img/icon-right-arrow.svg",
-    "source/img/logo-footer.svg",
-    "source/img/icon-insta.svg",
-    "source/img/icon-fb.svg",
-    "source/img/icon-twitter.svg",
-    "source/img/htmlacademy.svg",
-    "source/img/icon-phone.svg",
-    "source/img/icon-mail.svg"
+    "source/img/sprite/search-icon.svg",
+    "source/img/sprite/basket-icon.svg",
+    "source/img/sprite/interior-icon.svg",
+    "source/img/sprite/toys-icon.svg",
+    "source/img/sprite/icon-left-arrow.svg",
+    "source/img/sprite/icon-right-arrow.svg",
+    "source/img/sprite/logo-footer.svg",
+    "source/img/sprite/icon-instagram.svg",
+    "source/img/sprite/icon-fb.svg",
+    "source/img/sprite/icon-twitter.svg",
+    "source/img/sprite/htmlacademy.svg",
+    "source/img/sprite/icon-phone.svg",
+    "source/img/sprite/icon-mail.svg"
   ])
     .pipe(svgstore({
       inlineSvg: true
