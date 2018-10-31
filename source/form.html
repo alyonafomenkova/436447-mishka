@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -67,7 +69,7 @@
       </p>
       <fieldset class="order-form__group order-form__group--radio">
         <div class="order-form__group-layout-wrap container">
-          <legend class="order-form__legend order-form__legend--type">Тип</legend>
+          <h3 class="order-form__legend order-form__legend--type">Тип</h3>
           <ul class="order-form__fields-list order-form__fields-list--type">
             <li class="order-form__fields-item order-form__fields-item--type">
               <input class="order-form__input order-form__input--radio visually-hidden" type="radio" name="type" id="accessory-id" checked>
@@ -82,7 +84,7 @@
       </fieldset>
       <fieldset class="order-form__group order-form__group--checkbox">
         <div class="order-form__group-layout-wrap order-form__group-layout-wrap--checkbox container">
-          <legend class="order-form__legend">Цвет</legend>
+          <h3 class="order-form__legend">Цвет</h3>
           <ul class="order-form__fields-list order-form__fields-list--color">
             <li class="order-form__fields-item order-form__fields-item--color">
               <input class="order-form__input order-form__input--checkbox visually-hidden" type="checkbox" name="color" id="white-id" checked>
@@ -113,7 +115,7 @@
       </fieldset>
       <fieldset class="order-form__group order-form__group--name">
         <div class="order-form__group-layout-wrap container">
-          <legend class="order-form__legend order-form__legend--name">ФИО</legend>
+          <h3 class="order-form__legend order-form__legend--name">ФИО</h3>
           <div class="order-form__field-wrapper">
             <div class="order-form__field-wrapper--name">
               <label class="order-form__label order-form__label--name" for="name-id">Имя:</label>
@@ -135,7 +137,7 @@
       </fieldset>
       <fieldset class="order-form__group order-form__group--tel">
         <div class="order-form__group-layout-wrap order-form__group-layout-wrap--icon container">
-          <legend class="order-form__legend order-form__legend--tel">Тел</legend>
+          <h3 class="order-form__legend order-form__legend--tel">Тел</h3>
           <input class="order-form__input order-form__input--tel order-form__input--placeholder-style" type="tel" name="phone" id="phone-id"
             placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
           <svg class="order-form__icon order-form__icon--phone" width="25" height="24">
@@ -145,7 +147,7 @@
       </fieldset>
       <fieldset class="order-form__group order-form__group--email">
         <div class="order-form__group-layout-wrap order-form__group-layout-wrap--icon container">
-          <legend class="order-form__legend order-form__legend--email">E-mail</legend>
+          <h3 class="order-form__legend order-form__legend--email">E-mail</h3>
           <input class="order-form__input order-form__input--email order-form__input--placeholder-style" type="email" name="email"
             id="email-id" placeholder="Ваш Email*" required>
           <svg class="order-form__icon order-form__icon--email" width="32" height="32">
@@ -155,13 +157,13 @@
       </fieldset>
       <fieldset class="order-form__group order-form__group--comment">
         <div class="order-form__group-layout-wrap container">
-          <legend class="order-form__legend order-form__legend--comment">Доп</legend>
+          <h3 class="order-form__legend order-form__legend--comment">Доп</h3>
           <textarea class="order-form__comment order-form__comment--placeholder-style" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </div>
       </fieldset>
       <div class="container">
         <p class="order-form__required-fields">*Поля обязательны для заполнения</p>
         <button class="order-form__order-btn button">Отправить заказ</button>
-      </div>
       </div>
     </form>
   </main>
