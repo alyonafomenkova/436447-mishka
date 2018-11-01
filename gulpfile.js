@@ -63,7 +63,7 @@ gulp.task("webp", function () {
     "source/img/map*.jpg",
     "source/img/photo*.jpg",
     "source/img/triple*.jpg",
-    "source/img/video*.jpg",
+    "source/img/video*.jpg"
   ])
     .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("source/img"));

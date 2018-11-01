@@ -16,7 +16,7 @@
   border: none;
 
   &--checkbox {
-    margin-bottom: 37px;
+    margin-bottom: 40px;
   }
 
   &--name {
@@ -24,7 +24,7 @@
   }
 
   &--tel {
-    margin-bottom: 29px;
+    margin-bottom: 32px;
   }
 
   &--email {
@@ -43,8 +43,11 @@
 /*--------------- legend ---------------*/
 .order-form__legend {
   width: 60px;
+  margin: 0;
   position: relative;
   text-transform: uppercase;
+  font-size: 17px;
+  line-height: 18px;
   word-wrap: break-word;
   color: #63d1bb;
 
@@ -64,7 +67,7 @@
   }
 
   &--name {
-    margin-bottom: 26px;
+    margin-bottom: 29px;
   }
 }
 
@@ -76,15 +79,15 @@
   flex-direction: column;
   text-align: center;
   position: relative;
-  margin-top: 30px;
+  margin-top: 35px;
 
   &--color {
-    margin-top: 33px;
+    margin-top: 35px;
   }
 }
 
 .order-form__fields-item {
-  margin-bottom: 26px;
+  margin-bottom: 24px;
   text-align: left;
 
   &:last-child {
@@ -92,14 +95,14 @@
   }
 
   &--color {
-    margin-bottom: 44px;
+    margin-bottom: 43px;
   }
 }
 
 .order-form__input--radio + label::before {
   content: "";
   position: absolute;
-  top: -6px;
+  top: -9px;
   left: 0;
   width: 38px;
   height: 38px;
@@ -110,7 +113,7 @@
 .order-form__input--radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 6px;
+  top: 3px;
   left: 11px;
   width: 16px;
   height: 16px;
@@ -186,7 +189,7 @@
   }
 
   &--surname {
-    margin-bottom: 21px;
+    margin-bottom: 22px;
   }
 }
 
@@ -235,7 +238,7 @@
 .order-form__comment {
   width: 100%;
   min-height: 142px;
-  margin-top: 22px;
+  margin-top: 24px;
   padding-top: 13px;
   padding-left: 15px;
   border: 2px solid #444444;
@@ -516,7 +519,7 @@
 
     &--checkbox {
       padding-bottom: 10px;
-      margin-bottom: 50px;
+      margin-bottom: 49px;
     }
 
     &--tel,
@@ -552,6 +555,10 @@
     }
   }
 
+  .order-form__group-layout-wrap--checkbox {
+    margin-top: 65px;
+  }
+
   .order-form__legend {
     padding-left: 60px;
 
@@ -585,12 +592,12 @@
   }
 
   .order-form__input--radio + label::before {
-    top: -10px;
+    top: -12px;
     left: -82px;
   }
 
   .order-form__input--radio:checked + label::after {
-    top: 6px;
+    top: 4px;
     left: -66px;
   }
 
@@ -600,7 +607,7 @@
   }
 
   .order-form__input--checkbox:checked + label::after {
-    top: -5px;
+    top: -8px;
     left: 25px;
   }
 
@@ -639,11 +646,11 @@
 
   .order-form__order-btn {
     margin-left: 225px;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   .order-form__required-fields {
-    margin-right: 175px;
-    padding-top: 11px;
+    margin-right: 174px;
+    padding-top: 9px;
   }
 }
