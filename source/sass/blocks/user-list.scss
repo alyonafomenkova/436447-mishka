@@ -59,15 +59,16 @@
 
 @media (min-width: $tablet-width) {
   .user-list {
+    display: flex;
     flex-wrap: wrap;
-    width: 350px;
+    width: 398px;
     order: 1;
-    margin-left: auto;
     padding-top: 2px;
+    padding-right: 50px;
   }
 
   .user-list__link {
-    width: auto;
+    width: 182px;
     padding-top: 28px;
   }
 
@@ -83,7 +84,6 @@
 
   .user-list__item {
     padding: 0;
-    padding-bottom: 31px;
     border: none;
 
     &--search {

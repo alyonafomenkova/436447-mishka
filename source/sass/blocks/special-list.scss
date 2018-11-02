@@ -5,10 +5,14 @@
 
 @media (min-width: $tablet-width) {
   .special-list {
+    width: 414px;
+    padding-right: 50px;
     order: 3;
     flex-wrap: wrap;
-    padding-top: 20px;
+    justify-content: flex-end;
+    padding-top: 14px;
     font-size: 15px;
+    border-top: 1px solid #ececec;
   }
 
   .special-list__item--delivery {

@@ -7,12 +7,12 @@
 }
 
 .page-header__logo {
-  align-self: center;
-  min-height: 35px;
   margin: 22px 2px 22px 0;
 }
 
 .page-header__logo-img {
+  margin: 0 auto;
+
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -28,20 +28,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
-    padding: 0 50px;
     border-bottom: none;
   }
 
   .page-header__logo {
-    position: absolute;
-    top: 22px;
-    left: 50px;
-    margin: 0;
-    z-index: 5;
+    width: 316px;
+    padding-left: 50px;
   }
 
+
   .page-header__logo-img {
-    width: 112px;
+    margin: 0;
     height: 46px;
   }
 }
