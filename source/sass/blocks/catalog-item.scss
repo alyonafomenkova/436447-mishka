@@ -57,8 +57,8 @@
 
 .catalog-item__purchase-wrapper {
   display: flex;
-  justify-content: space-around;
-  position: relative;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 5px;
   padding-bottom: 12px;
   border-top: 1px solid #ececec;
@@ -66,16 +66,12 @@
 
 .catalog-item__price {
   width: 100px;
-  margin-right: auto;
   font-size: 15px;
   line-height: 24px;
   word-wrap: break-word;
 }
 
 .catalog-item__basket-icon {
-  position: absolute;
-  top: 22px;
-  right: 0;
   fill: #d3d2d2;
 
   &:hover,
