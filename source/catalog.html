@@ -11,52 +11,54 @@
 </head>
 
 <body>
-  <header class="page-header container">
-    <a class="page-header__logo main-logo" href="index.html">
-      <picture>
-        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-        <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Логотип сайта Mishka">
-      </picture>
-    </a>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--catalog">
-          <a class="site-list__link site-list__current">Каталог товаров</a>
-        </li>
-        <li class="site-list__item site-list__item--knitting">
-          <a class="site-list__link" href="form.html">Вязание на заказ</a>
-        </li>
-      </ul>
-      <ul class="main-nav__list user-list">
-        <li class="user-list__item user-list__item--search">
-          <a class="user-list__link" href="#">Поиск по сайту
-            <svg class="user-list__search-icon" width="18" height="18">
-              <use xlink:href="img/sprite.svg#search-icon"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="user-list__item user-list__item--basket">
-          <a class="user-list__link" href="#">Корзина: пока пуста
-            <svg class="user-list__basket-icon" width="21" height="18">
-              <use xlink:href="img/sprite.svg#basket-icon"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <ul class="main-nav__list special-list">
-        <li class="special-list__item special-list__item--new">
-          <a class="special-list__link" href="#">Новые поступления</a>
-        </li>
-        <li class="special-list__item special-list__item--sale">
-          <a class="special-list__link" href="#">Распродажа</a>
-        </li>
-        <li class="special-list__item special-list__item--delivery">
-          <span>Бесплатная доставка по России</span>
-        </li>
-      </ul>
-    </nav>
+  <header class="page-header">
+    <div class="container">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <a class="page-header__logo main-logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Логотип сайта Mishka">
+          </picture>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        </a>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--catalog">
+            <a class="site-list__link site-list__current">Каталог товаров</a>
+          </li>
+          <li class="site-list__item site-list__item--knitting">
+            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item user-list__item--search">
+            <a class="user-list__link" href="#">Поиск по сайту
+              <svg class="user-list__search-icon" width="18" height="18">
+                <use xlink:href="img/sprite.svg#search-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="user-list__item user-list__item--basket">
+            <a class="user-list__link" href="#">Корзина: пока пуста
+              <svg class="user-list__basket-icon" width="21" height="18">
+                <use xlink:href="img/sprite.svg#basket-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__list special-list">
+          <li class="special-list__item special-list__item--new">
+            <a class="special-list__link" href="#">Новые поступления</a>
+          </li>
+          <li class="special-list__item special-list__item--sale">
+            <a class="special-list__link" href="#">Распродажа</a>
+          </li>
+          <li class="special-list__item special-list__item--delivery">
+            <span>Бесплатная доставка по России</span>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">

@@ -97,16 +97,13 @@
 
 @media (min-width: $desktop-width) {
   .user-list {
-    width: 50%;
-    margin: 0;
+    width: 350px;
+    padding: 0;
+    margin-right: 50px;
   }
 
   .user-list__basket-icon {
     top: 33px;
     left: -55px;
-  }
-
-  .user-list__item--search {
-    margin-left: 174px;
   }
 }

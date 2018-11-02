@@ -22,22 +22,37 @@
 
 @media (min-width: $desktop-width) {
   .special-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 50px;
     padding-top: 17px;
+    background-color: #f1f1f1;
+
+    &--index {
+      background-color: #f9f9f9;
+    }
   }
 
   .special-list__item {
     display: block;
-    width: 160px;
+    word-wrap: break-word;
     font-weight: bold;
 
+    &--new {
+      width: 220px;
+    }
+
     &--sale {
-      margin-left: 60px;
-      margin-right: 435px;
+      width: 220px;
     }
 
     &--delivery {
+      margin-left: auto;
       width: 235px;
       font-weight: normal;
+      text-align: right;
     }
   }
 
