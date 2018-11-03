@@ -14,20 +14,22 @@
   <header class="page-header">
     <div class="container">
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <a class="page-header__logo main-logo" href="index.html">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Логотип сайта Mishka">
-          </picture>
+        <div class="page-header__logo main-logo">
+          <a href="index.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Логотип сайта Mishka">
+            </picture>
+          </a>
           <button class="main-nav__toggle" type="button">Открыть меню</button>
-        </a>
+        </div>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--catalog">
             <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item site-list__item--knitting">
-            <a class="site-list__link site-list__current">Вязание на заказ</a>
+            <a class="site-list__link site-list__current site-list__link--knitting">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="main-nav__list user-list">
