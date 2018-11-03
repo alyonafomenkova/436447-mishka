@@ -16,8 +16,8 @@
 }
 
 .main-nav--closed .main-nav__toggle {
-  top: -53px;
-  right: 30px;
+  top: 6px;
+  right: 29px;
 
   &::before {
     content: "";
@@ -31,7 +31,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: -53px;
+  top: 6px;
   right: 27px;
 
   &::before {
